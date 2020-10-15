@@ -1,0 +1,15 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP IRF5305
+D -3.6A Id, -30V Vds, HexFET P-MOS Power MOSFET, Ronon 0.09R, Micro8
+K HexFET Power MOSFET P-MOS
+F http://www.irf.com/product-info/datasheets/data/irf7606pbf.pdf
+$ENDCMP
+#
+$CMP IRF5305-Reverse-Polarity
+D -3.6A Id, -30V Vds, HexFET P-MOS Power MOSFET, Ronon 0.09R, Micro8
+K HexFET Power MOSFET P-MOS
+F http://www.irf.com/product-info/datasheets/data/irf7606pbf.pdf
+$ENDCMP
+#
+#End Doc Library
