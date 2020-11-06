@@ -1,4 +1,4 @@
-18234439940435038
+18252079798347038
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -80220,6 +80220,13 @@ varistor SIOV
 2
 2
 ariadne
+01x15_2.50mm_HEADER_PIN
+
+
+0
+15
+15
+ariadne
 Bridgelux-BXRH-V4
 
 
@@ -80227,12 +80234,47 @@ Bridgelux-BXRH-V4
 55
 3
 ariadne
+ESP32-DEVKIT
+
+
+0
+31
+30
+ariadne
+GB215AP
+
+
+0
+2
+2
+ariadne
+Heatsink-HP20S-CALBL-001
+
+
+0
+4
+1
+ariadne
+Heatsink-NX301117
+
+
+0
+8
+1
+ariadne
+IRF5305
+
+
+0
+3
+3
+ariadne
 Meanwell-LDD-1xxxL
 
 
 0
-0
-0
+5
+5
 ariadne
 Meanwell-LDD-1200LW
 
@@ -80241,12 +80283,33 @@ Meanwell-LDD-1200LW
 0
 0
 ariadne
+Noctua-NF-A4x10
+
+
+0
+7
+4
+ariadne
+Noctua-NF-A4x10-mech
+
+
+0
+7
+4
+ariadne
 Vero-13
 
 
 0
 127
 3
+ariadne
+Vero-13-mech
+
+
+0
+125
+1
 ariadne
 Vero-18
 
@@ -80255,12 +80318,26 @@ Vero-18
 127
 3
 ariadne
+Vero-18-mech
+
+
+0
+125
+1
+ariadne
 Vero-29
 
 
 0
 295
 3
+ariadne
+Vero-29-mech
+
+
+0
+293
+1
 teensy
 Teensy1.0
 11
