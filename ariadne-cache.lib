@@ -54,8 +54,8 @@ $FPLIST
 $ENDFPLIST
 DRAW
 P 2 0 1 0 50 0 -50 0 N
-P 4 0 1 10 50 50 50 -50 -50 0 50 50 N
-P 6 0 1 10 -75 25 -75 50 -50 50 -50 -50 -25 -50 -25 -25 N
+P 4 0 1 8 50 50 50 -50 -50 0 50 50 N
+P 6 0 1 8 -75 25 -75 50 -50 50 -50 -50 -25 -50 -25 -25 N
 X K 1 -150 0 100 R 50 50 1 1 P
 X A 2 150 0 100 L 50 50 1 1 P
 ENDDRAW
@@ -74,9 +74,9 @@ $FPLIST
  LED_THT:*
 $ENDFPLIST
 DRAW
-P 2 0 1 10 -50 -50 -50 50 N
+P 2 0 1 8 -50 -50 -50 50 N
 P 2 0 1 0 -50 0 50 0 N
-P 4 0 1 10 50 -50 50 50 -50 0 50 -50 N
+P 4 0 1 8 50 -50 50 50 -50 0 50 -50 N
 P 5 0 1 0 -120 -30 -180 -90 -150 -90 -180 -90 -180 -60 N
 P 5 0 1 0 -70 -30 -130 -90 -100 -90 -130 -90 -130 -60 N
 X K 1 -150 0 100 R 50 50 1 1 P
@@ -98,21 +98,6 @@ DRAW
 S -40 -100 40 100 0 1 10 N
 X ~ 1 0 150 50 D 50 50 1 1 P
 X ~ 2 0 -150 50 U 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
-# OpenSourceCelluloid_Power-Button
-#
-DEF OpenSourceCelluloid_Power-Button U 0 40 Y Y 1 F N
-F0 "U" 0 0 50 H V C CNN
-F1 "OpenSourceCelluloid_Power-Button" 0 -200 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-DRAW
-S -250 450 250 50 0 1 0 N
-X A 1 -150 550 100 D 50 50 1 1 P
-X B 2 0 550 100 D 50 50 1 1 P
-X LED 3 150 550 100 D 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
@@ -139,11 +124,11 @@ X C 3 100 200 100 D 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# ariadne_01x15_2.50mm_HEADER_PIN
+# ariadne-rescue_01x15_2.50mm_HEADER_PIN-ariadne
 #
-DEF ariadne_01x15_2.50mm_HEADER_PIN U 0 40 Y Y 1 F N
+DEF ariadne-rescue_01x15_2.50mm_HEADER_PIN-ariadne U 0 40 Y Y 1 F N
 F0 "U" 0 -1200 50 H V C CNN
-F1 "ariadne_01x15_2.50mm_HEADER_PIN" 0 -1050 50 H V C CNN
+F1 "ariadne-rescue_01x15_2.50mm_HEADER_PIN-ariadne" 0 -1050 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -166,11 +151,11 @@ X 9 9 -100 -50 100 R 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# ariadne_Bridgelux-Vero-18-mech
+# ariadne-rescue_Bridgelux-Vero-18-mech-ariadne
 #
-DEF ariadne_Bridgelux-Vero-18-mech U 0 40 Y Y 1 F N
+DEF ariadne-rescue_Bridgelux-Vero-18-mech-ariadne U 0 40 Y Y 1 F N
 F0 "U" 0 -50 50 H V C CNN
-F1 "ariadne_Bridgelux-Vero-18-mech" 0 450 50 H V C CNN
+F1 "ariadne-rescue_Bridgelux-Vero-18-mech-ariadne" 0 450 50 H V C CNN
 F2 "ariadne:Vero-18" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -179,11 +164,11 @@ X ~ 0 0 -250 100 U 50 50 1 1 N
 ENDDRAW
 ENDDEF
 #
-# ariadne_Bridgelux-Vero-29-mech
+# ariadne-rescue_Bridgelux-Vero-29-mech-ariadne
 #
-DEF ariadne_Bridgelux-Vero-29-mech U 0 40 Y Y 1 F N
+DEF ariadne-rescue_Bridgelux-Vero-29-mech-ariadne U 0 40 Y Y 1 F N
 F0 "U" 50 -200 50 H V C CNN
-F1 "ariadne_Bridgelux-Vero-29-mech" 0 450 50 H V C CNN
+F1 "ariadne-rescue_Bridgelux-Vero-29-mech-ariadne" 0 450 50 H V C CNN
 F2 "ariadne:Vero-29" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -192,11 +177,11 @@ X Thermal 0 0 -250 100 U 50 50 1 1 N
 ENDDRAW
 ENDDEF
 #
-# ariadne_CT2084-ND-DIP-SWITCH
+# ariadne-rescue_CT2084-ND-DIP-SWITCH-ariadne
 #
-DEF ariadne_CT2084-ND-DIP-SWITCH U 0 40 Y Y 1 F N
+DEF ariadne-rescue_CT2084-ND-DIP-SWITCH-ariadne U 0 40 Y Y 1 F N
 F0 "U" 0 -500 50 H V C CNN
-F1 "ariadne_CT2084-ND-DIP-SWITCH" 50 500 50 H V C CNN
+F1 "ariadne-rescue_CT2084-ND-DIP-SWITCH-ariadne" 50 500 50 H V C CNN
 F2 "" 200 0 50 H I C CNN
 F3 "" 200 0 50 H I C CNN
 DRAW
@@ -212,11 +197,11 @@ X GND 8 150 -300 100 U 50 50 1 1 I
 ENDDRAW
 ENDDEF
 #
-# ariadne_Connector-LED
+# ariadne-rescue_Connector-LED-ariadne
 #
-DEF ariadne_Connector-LED U 0 40 Y Y 1 F N
+DEF ariadne-rescue_Connector-LED-ariadne U 0 40 Y Y 1 F N
 F0 "U" 50 -50 50 H V C CNN
-F1 "ariadne_Connector-LED" 50 50 50 H V C CNN
+F1 "ariadne-rescue_Connector-LED-ariadne" 50 50 50 H V C CNN
 F2 "Connector_JST:JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical" 0 0 50 H V C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -226,11 +211,11 @@ X - 2 250 -150 100 L 50 50 1 1 I
 ENDDRAW
 ENDDEF
 #
-# ariadne_Connector-POWER
+# ariadne-rescue_Connector-POWER-ariadne
 #
-DEF ariadne_Connector-POWER U 0 40 Y Y 1 F N
+DEF ariadne-rescue_Connector-POWER-ariadne U 0 40 Y Y 1 F N
 F0 "U" 50 -50 50 H V C CNN
-F1 "ariadne_Connector-POWER" 50 50 50 H V C CNN
+F1 "ariadne-rescue_Connector-POWER-ariadne" 50 50 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -240,11 +225,11 @@ X - 2 250 -150 100 L 50 50 1 1 I
 ENDDRAW
 ENDDEF
 #
-# ariadne_ESP32-WROOM-32D
+# ariadne-rescue_ESP32-WROOM-32D-ariadne
 #
-DEF ariadne_ESP32-WROOM-32D U 0 40 Y Y 1 F N
+DEF ariadne-rescue_ESP32-WROOM-32D-ariadne U 0 40 Y Y 1 F N
 F0 "U" 0 -850 50 H V C CNN
-F1 "ariadne_ESP32-WROOM-32D" 0 850 50 H V C CNN
+F1 "ariadne-rescue_ESP32-WROOM-32D-ariadne" 0 850 50 H V C CNN
 F2 "ariadne:ESP32-DEVKIT" -50 50 50 H I C CNN
 F3 "" -50 50 50 H I C CNN
 DRAW
@@ -282,11 +267,11 @@ X D26 9 -600 -100 100 R 50 50 1 1 I
 ENDDRAW
 ENDDEF
 #
-# ariadne_GB215AP
+# ariadne-rescue_GB215AP-ariadne
 #
-DEF ariadne_GB215AP SW 0 0 N Y 1 F N
+DEF ariadne-rescue_GB215AP-ariadne SW 0 0 N Y 1 F N
 F0 "SW" 0 -50 40 H V C CNN
-F1 "ariadne_GB215AP" 0 100 40 H V C CNN
+F1 "ariadne-rescue_GB215AP-ariadne" 0 100 40 H V C CNN
 F2 "ariadne:GB215AP" -100 -200 60 H I C CNN
 F3 "" 0 0 60 H V C CNN
 DRAW
@@ -298,11 +283,11 @@ X 2 2 250 0 100 L 40 40 1 1 P
 ENDDRAW
 ENDDEF
 #
-# ariadne_IRF5305-Reverse-Polarity
+# ariadne-rescue_IRF5305-Reverse-Polarity-ariadne
 #
-DEF ariadne_IRF5305-Reverse-Polarity Q 0 20 Y N 1 F N
+DEF ariadne-rescue_IRF5305-Reverse-Polarity-ariadne Q 0 20 Y N 1 F N
 F0 "Q" 150 75 50 H V L CNN
-F1 "ariadne_IRF5305-Reverse-Polarity" 150 0 50 H V L CNN
+F1 "ariadne-rescue_IRF5305-Reverse-Polarity-ariadne" 150 0 50 H V L CNN
 F2 "Package_SO:MSOP-8_3x3mm_P0.65mm" 150 -75 50 H I L CIN
 F3 "" -50 0 50 V I L CNN
 $FPLIST
@@ -329,11 +314,11 @@ X S 3 50 -200 100 U 50 50 1 1 I
 ENDDRAW
 ENDDEF
 #
-# ariadne_LDH-45B-1050-connector
+# ariadne-rescue_LDH-45B-1050-connector-ariadne
 #
-DEF ariadne_LDH-45B-1050-connector U 0 40 Y Y 1 F N
+DEF ariadne-rescue_LDH-45B-1050-connector-ariadne U 0 40 Y Y 1 F N
 F0 "U" 300 150 50 H V C CNN
-F1 "ariadne_LDH-45B-1050-connector" 250 50 50 H V C CNN
+F1 "ariadne-rescue_LDH-45B-1050-connector-ariadne" 250 50 50 H V C CNN
 F2 "OpenCelluloid:MeanWell-LDH-45B-1050" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -346,11 +331,11 @@ X Vin+ 5 -200 -500 100 R 50 50 1 1 I
 ENDDRAW
 ENDDEF
 #
-# ariadne_LDH-45B-1050-mech
+# ariadne-rescue_LDH-45B-1050-mech-ariadne
 #
-DEF ariadne_LDH-45B-1050-mech U 0 40 Y Y 1 F N
+DEF ariadne-rescue_LDH-45B-1050-mech-ariadne U 0 40 Y Y 1 F N
 F0 "U" 300 150 50 H V C CNN
-F1 "ariadne_LDH-45B-1050-mech" 250 50 50 H V C CNN
+F1 "ariadne-rescue_LDH-45B-1050-mech-ariadne" 250 50 50 H V C CNN
 F2 "OpenCelluloid:MeanWell-LDH-45B-1050" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -365,11 +350,11 @@ X VOUT+ 7 800 -400 100 L 50 50 1 1 O
 ENDDRAW
 ENDDEF
 #
-# ariadne_Meanwell-LDD-1200LW
+# ariadne-rescue_Meanwell-LDD-1200LW-ariadne
 #
-DEF ariadne_Meanwell-LDD-1200LW U 0 40 Y Y 1 F N
+DEF ariadne-rescue_Meanwell-LDD-1200LW-ariadne U 0 40 Y Y 1 F N
 F0 "U" 0 100 50 H V C CNN
-F1 "ariadne_Meanwell-LDD-1200LW" 0 300 50 H V C CNN
+F1 "ariadne-rescue_Meanwell-LDD-1200LW-ariadne" 0 300 50 H V C CNN
 F2 "ariadne:Meanwell-LDD-1xxxL" -200 0 50 H I C CNN
 F3 "" -200 0 50 H I C CNN
 DRAW
@@ -382,11 +367,11 @@ X VOUT+ 5 450 100 100 L 50 50 1 1 O
 ENDDRAW
 ENDDEF
 #
-# ariadne_Meanwell-LDD-1200LW-connector
+# ariadne-rescue_Meanwell-LDD-1200LW-connector-ariadne
 #
-DEF ariadne_Meanwell-LDD-1200LW-connector U 0 40 Y Y 1 F N
+DEF ariadne-rescue_Meanwell-LDD-1200LW-connector-ariadne U 0 40 Y Y 1 F N
 F0 "U" 0 100 50 H V C CNN
-F1 "ariadne_Meanwell-LDD-1200LW-connector" 0 300 50 H V C CNN
+F1 "ariadne-rescue_Meanwell-LDD-1200LW-connector-ariadne" 0 300 50 H V C CNN
 F2 "ariadne:Meanwell-LDD-1xxxL" -200 0 50 H I C CNN
 F3 "" -200 0 50 H I C CNN
 DRAW
@@ -397,11 +382,11 @@ X DIM 3 0 -300 100 U 50 50 1 1 I
 ENDDRAW
 ENDDEF
 #
-# ariadne_Noctua-NF-A4x10-Fan
+# ariadne-rescue_Noctua-NF-A4x10-Fan-ariadne
 #
-DEF ariadne_Noctua-NF-A4x10-Fan U 0 40 Y Y 1 F N
+DEF ariadne-rescue_Noctua-NF-A4x10-Fan-ariadne U 0 40 Y Y 1 F N
 F0 "U" 150 -150 50 H V C CNN
-F1 "ariadne_Noctua-NF-A4x10-Fan" 0 -800 50 H V C CNN
+F1 "ariadne-rescue_Noctua-NF-A4x10-Fan-ariadne" 0 -800 50 H V C CNN
 F2 "ariadne:Noctua-NF-A4x10" -1150 350 50 H I C CNN
 F3 "" -1150 350 50 H I C CNN
 DRAW
@@ -413,11 +398,11 @@ X PWM 4 300 300 100 D 50 50 1 1 I
 ENDDRAW
 ENDDEF
 #
-# ariadne_Noctua-NF-A4x10-Fan-mech
+# ariadne-rescue_Noctua-NF-A4x10-Fan-mech-ariadne
 #
-DEF ariadne_Noctua-NF-A4x10-Fan-mech U 0 40 Y Y 1 F N
+DEF ariadne-rescue_Noctua-NF-A4x10-Fan-mech-ariadne U 0 40 Y Y 1 F N
 F0 "U" 150 -150 50 H V C CNN
-F1 "ariadne_Noctua-NF-A4x10-Fan-mech" 0 -800 50 H V C CNN
+F1 "ariadne-rescue_Noctua-NF-A4x10-Fan-mech-ariadne" 0 -800 50 H V C CNN
 F2 "ariadne:Noctua-NF-A4x10" -1150 350 50 H I C CNN
 F3 "" -1150 350 50 H I C CNN
 DRAW
@@ -426,11 +411,26 @@ X MECH 0 0 -350 100 U 40 40 1 1 N
 ENDDRAW
 ENDDEF
 #
-# ariadne_OKI-78SR-3.3_1.5-W36-C
+# ariadne-rescue_OKI-78SR-12v-OpenSourceCelluloid-upuaut-rescue
 #
-DEF ariadne_OKI-78SR-3.3_1.5-W36-C U 0 40 Y Y 1 F N
+DEF ariadne-rescue_OKI-78SR-12v-OpenSourceCelluloid-upuaut-rescue U 0 40 Y Y 1 F N
 F0 "U" 0 250 50 H V C CNN
-F1 "ariadne_OKI-78SR-3.3_1.5-W36-C" 0 350 50 H V C CNN
+F1 "ariadne-rescue_OKI-78SR-12v-OpenSourceCelluloid-upuaut-rescue" 0 350 50 H V C CNN
+F2 "" 0 -50 50 H I C CNN
+F3 "" 0 -100 50 H I C CNN
+DRAW
+S -200 150 200 -250 0 1 0 N
+X VIN 1 -300 50 100 R 50 50 1 1 I
+X GND 2 0 -350 100 U 50 50 1 1 I
+X VOUT 3 300 50 100 L 50 50 1 1 O
+ENDDRAW
+ENDDEF
+#
+# ariadne-rescue_OKI-78SR-3.3_1.5-W36-C-ariadne
+#
+DEF ariadne-rescue_OKI-78SR-3.3_1.5-W36-C-ariadne U 0 40 Y Y 1 F N
+F0 "U" 0 250 50 H V C CNN
+F1 "ariadne-rescue_OKI-78SR-3.3_1.5-W36-C-ariadne" 0 350 50 H V C CNN
 F2 "Converter_DCDC:Converter_DCDC_muRata_OKI-78SR_Vertical" 0 -50 50 H I C CNN
 F3 "" 0 -100 50 H I C CNN
 DRAW
@@ -438,6 +438,36 @@ S -200 150 200 -250 0 1 0 N
 X VIN 1 -300 50 100 R 50 50 1 1 I
 X GND 2 0 -350 100 U 50 50 1 1 I
 X VOUT 3 300 50 100 L 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
+# ariadne-rescue_OKI-78SR-5v-OpenSourceCelluloid-upuaut-rescue
+#
+DEF ariadne-rescue_OKI-78SR-5v-OpenSourceCelluloid-upuaut-rescue U 0 40 Y Y 1 F N
+F0 "U" 0 250 50 H V C CNN
+F1 "ariadne-rescue_OKI-78SR-5v-OpenSourceCelluloid-upuaut-rescue" 0 350 50 H V C CNN
+F2 "" 0 -50 50 H I C CNN
+F3 "" 0 -100 50 H I C CNN
+DRAW
+S -200 150 200 -250 0 1 0 N
+X VIN 1 -300 50 100 R 50 50 1 1 I
+X GND 2 0 -350 100 U 50 50 1 1 I
+X VOUT 3 300 50 100 L 50 50 1 1 O
+ENDDRAW
+ENDDEF
+#
+# ariadne-rescue_Power-Button-OpenSourceCelluloid
+#
+DEF ariadne-rescue_Power-Button-OpenSourceCelluloid U 0 40 Y Y 1 F N
+F0 "U" 0 0 50 H V C CNN
+F1 "ariadne-rescue_Power-Button-OpenSourceCelluloid" 0 -200 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+S -250 450 250 50 0 1 0 N
+X A 1 -150 550 100 D 50 50 1 1 P
+X B 2 0 550 100 D 50 50 1 1 P
+X LED 3 150 550 100 D 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
@@ -525,36 +555,6 @@ F3 "" 0 0 50 H I C CNN
 DRAW
 P 6 0 1 0 0 0 0 50 -40 75 0 100 40 75 0 50 N
 X pwr 1 0 0 0 U 50 50 0 0 w
-ENDDRAW
-ENDDEF
-#
-# upuaut-rescue_OKI-78SR-12v-OpenSourceCelluloid
-#
-DEF upuaut-rescue_OKI-78SR-12v-OpenSourceCelluloid U 0 40 Y Y 1 F N
-F0 "U" 0 250 50 H V C CNN
-F1 "upuaut-rescue_OKI-78SR-12v-OpenSourceCelluloid" 0 350 50 H V C CNN
-F2 "" 0 -50 50 H I C CNN
-F3 "" 0 -100 50 H I C CNN
-DRAW
-S -200 150 200 -250 0 1 0 N
-X VIN 1 -300 50 100 R 50 50 1 1 I
-X GND 2 0 -350 100 U 50 50 1 1 I
-X VOUT 3 300 50 100 L 50 50 1 1 O
-ENDDRAW
-ENDDEF
-#
-# upuaut-rescue_OKI-78SR-5v-OpenSourceCelluloid
-#
-DEF upuaut-rescue_OKI-78SR-5v-OpenSourceCelluloid U 0 40 Y Y 1 F N
-F0 "U" 0 250 50 H V C CNN
-F1 "upuaut-rescue_OKI-78SR-5v-OpenSourceCelluloid" 0 350 50 H V C CNN
-F2 "" 0 -50 50 H I C CNN
-F3 "" 0 -100 50 H I C CNN
-DRAW
-S -200 150 200 -250 0 1 0 N
-X VIN 1 -300 50 100 R 50 50 1 1 I
-X GND 2 0 -350 100 U 50 50 1 1 I
-X VOUT 3 300 50 100 L 50 50 1 1 O
 ENDDRAW
 ENDDEF
 #

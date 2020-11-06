@@ -14,7 +14,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L ariadne:ESP32-WROOM-32D U16
+L ariadne-rescue:ESP32-WROOM-32D-ariadne U16
 U 1 1 5F84DC5D
 P 9300 1650
 F 0 "U16" H 9300 2575 50  0000 C CNN
@@ -25,7 +25,7 @@ F 3 "" H 9250 1700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L ariadne:Connector-POWER U1
+L ariadne-rescue:Connector-POWER-ariadne U1
 U 1 1 5F84F534
 P 1600 1600
 F 0 "U1" V 1604 1538 50  0000 L CNN
@@ -36,7 +36,7 @@ F 3 "" H 1600 1600 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L ariadne:OKI-78SR-3.3_1.5-W36-C U10
+L ariadne-rescue:OKI-78SR-3.3_1.5-W36-C-ariadne U10
 U 1 1 5F84FE44
 P 5950 3900
 F 0 "U10" H 5950 4215 50  0000 C CNN
@@ -47,7 +47,7 @@ F 3 "" H 5950 3800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L ariadne:CT2084-ND-DIP-SWITCH U9
+L ariadne-rescue:CT2084-ND-DIP-SWITCH-ariadne U9
 U 1 1 5F850BB4
 P 5100 2050
 F 0 "U9" V 4725 2050 50  0000 C CNN
@@ -69,7 +69,7 @@ F 3 "~" H 15100 1050 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L ariadne:IRF5305-Reverse-Polarity Q1
+L ariadne-rescue:IRF5305-Reverse-Polarity-ariadne Q1
 U 1 1 5F853A6F
 P 2000 2900
 F 0 "Q1" H 2155 2946 50  0000 L CNN
@@ -80,7 +80,7 @@ F 3 "http://www.irf.com/product-info/datasheets/data/irf7606pbf.pdf" V 1950 2900
 	1    0    0    -1  
 $EndComp
 $Comp
-L ariadne:Meanwell-LDD-1200LW U24
+L ariadne-rescue:Meanwell-LDD-1200LW-ariadne U24
 U 1 1 5F86EF8E
 P 14350 4450
 F 0 "U24" H 14350 4815 50  0000 C CNN
@@ -113,7 +113,7 @@ F 3 "~" H 2050 3600 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L OpenSourceCelluloid:Power-Button U7
+L ariadne-rescue:Power-Button-OpenSourceCelluloid U7
 U 1 1 5F8ACF92
 P 2600 2200
 F 0 "U7" V 2646 2222 50  0000 R CNN
@@ -499,7 +499,7 @@ F 3 "" H 8300 2250 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L ariadne:01x15_2.50mm_HEADER_PIN U12
+L ariadne-rescue:01x15_2.50mm_HEADER_PIN-ariadne U12
 U 1 1 5FA45304
 P 7650 1700
 F 0 "U12" H 7692 2715 50  0000 C CNN
@@ -546,7 +546,7 @@ Connection ~ 8050 2350
 Wire Wire Line
 	8050 2350 8700 2350
 $Comp
-L ariadne:01x15_2.50mm_HEADER_PIN U17
+L ariadne-rescue:01x15_2.50mm_HEADER_PIN-ariadne U17
 U 1 1 5FA655F3
 P 11000 1700
 F 0 "U17" H 11228 1796 50  0000 L CNN
@@ -587,7 +587,7 @@ Wire Wire Line
 Wire Wire Line
 	10900 2350 9900 2350
 $Comp
-L ariadne:01x15_2.50mm_HEADER_PIN U25
+L ariadne-rescue:01x15_2.50mm_HEADER_PIN-ariadne U25
 U 1 1 5FA8CCC2
 P 14600 7600
 F 0 "U25" H 14828 7696 50  0000 L CNN
@@ -598,7 +598,7 @@ F 3 "" H 14600 7600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L ariadne:01x15_2.50mm_HEADER_PIN U22
+L ariadne-rescue:01x15_2.50mm_HEADER_PIN-ariadne U22
 U 1 1 5FA8FF77
 P 13800 7600
 F 0 "U22" H 14028 7696 50  0000 L CNN
@@ -609,7 +609,7 @@ F 3 "" H 13800 7600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L ariadne:01x15_2.50mm_HEADER_PIN U21
+L ariadne-rescue:01x15_2.50mm_HEADER_PIN-ariadne U21
 U 1 1 5FA90DF1
 P 13000 7600
 F 0 "U21" H 13228 7696 50  0000 L CNN
@@ -620,7 +620,7 @@ F 3 "" H 13000 7600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L ariadne:01x15_2.50mm_HEADER_PIN U19
+L ariadne-rescue:01x15_2.50mm_HEADER_PIN-ariadne U19
 U 1 1 5FA915BA
 P 12150 7600
 F 0 "U19" H 12378 7696 50  0000 L CNN
@@ -851,7 +851,7 @@ Connection ~ 14500 8150
 Wire Wire Line
 	14500 8150 14500 8250
 $Comp
-L ariadne:GB215AP SW1
+L ariadne-rescue:GB215AP-ariadne SW1
 U 1 1 5FAFA5B7
 P 10350 3550
 F 0 "SW1" H 10350 3742 40  0000 C CNN
@@ -895,7 +895,7 @@ $EndComp
 Wire Wire Line
 	10600 4350 10950 4350
 $Comp
-L ariadne:GB215AP SW2
+L ariadne-rescue:GB215AP-ariadne SW2
 U 1 1 5FAFCC2F
 P 10350 4350
 F 0 "SW2" H 10350 4542 40  0000 C CNN
@@ -908,7 +908,7 @@ $EndComp
 Wire Wire Line
 	9700 4350 10100 4350
 $Comp
-L ariadne:Noctua-NF-A4x10-Fan U14
+L ariadne-rescue:Noctua-NF-A4x10-Fan-ariadne U14
 U 1 1 5FB1994A
 P 8550 8450
 F 0 "U14" H 8928 8496 50  0000 L CNN
@@ -1001,7 +1001,7 @@ F 3 "" H 2550 5700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L upuaut-rescue:OKI-78SR-12v-OpenSourceCelluloid U5
+L ariadne-rescue:OKI-78SR-12v-OpenSourceCelluloid-upuaut-rescue U5
 U 1 1 5FB2E5DB
 P 2550 5100
 F 0 "U5" H 2550 5415 50  0000 C CNN
@@ -1151,7 +1151,7 @@ F 3 "" H 3250 6950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L upuaut-rescue:OKI-78SR-5v-OpenSourceCelluloid U6
+L ariadne-rescue:OKI-78SR-5v-OpenSourceCelluloid-upuaut-rescue U6
 U 1 1 5FB2E640
 P 2550 7000
 F 0 "U6" H 2550 7315 50  0000 C CNN
@@ -1315,7 +1315,7 @@ Wire Notes Line
 	3400 750  550  750 
 NoConn ~ 2000 8700
 $Comp
-L ariadne:Connector-LED U4
+L ariadne-rescue:Connector-LED-ariadne U4
 U 1 1 5FBCC453
 P 2400 9650
 F 0 "U4" H 2450 9815 50  0000 C CNN
@@ -1569,7 +1569,7 @@ Wire Wire Line
 Wire Wire Line
 	1800 8800 2000 8800
 $Comp
-L ariadne:LDH-45B-1050-connector U3
+L ariadne-rescue:LDH-45B-1050-connector-ariadne U3
 U 1 1 5FE3450C
 P 2200 8500
 F 0 "U3" H 2928 8246 50  0000 L CNN
@@ -1580,7 +1580,7 @@ F 3 "" H 2200 8500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L ariadne:LDH-45B-1050-connector U2
+L ariadne-rescue:LDH-45B-1050-connector-ariadne U2
 U 1 1 5FE434F1
 P 1900 10350
 F 0 "U2" H 2142 10515 50  0000 C CNN
@@ -1593,7 +1593,7 @@ $EndComp
 Wire Wire Line
 	1800 8900 2000 8900
 $Comp
-L ariadne:LDH-45B-1050-mech U8
+L ariadne-rescue:LDH-45B-1050-mech-ariadne U8
 U 1 1 5FE9BF38
 P 3000 10350
 F 0 "U8" H 3300 10515 50  0000 C CNN
@@ -1622,7 +1622,7 @@ Wire Wire Line
 Wire Wire Line
 	2100 10850 2800 10850
 $Comp
-L ariadne:Meanwell-LDD-1200LW-connector U20
+L ariadne-rescue:Meanwell-LDD-1200LW-connector-ariadne U20
 U 1 1 5FF5322C
 P 12650 2700
 F 0 "U20" H 13028 2688 50  0000 L CNN
@@ -1633,7 +1633,7 @@ F 3 "" H 12450 2700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L ariadne:Meanwell-LDD-1200LW-connector U18
+L ariadne-rescue:Meanwell-LDD-1200LW-connector-ariadne U18
 U 1 1 5FF53985
 P 12050 4450
 F 0 "U18" H 11992 4815 50  0000 C CNN
@@ -1658,7 +1658,7 @@ Wire Wire Line
 Wire Wire Line
 	12050 4750 14350 4750
 $Comp
-L ariadne:Connector-LED U23
+L ariadne-rescue:Connector-LED-ariadne U23
 U 1 1 5FFD7104
 P 13850 5400
 F 0 "U23" H 13900 5565 50  0000 C CNN
@@ -1713,7 +1713,7 @@ Wire Notes Line
 Wire Notes Line
 	11200 2750 8800 2750
 $Comp
-L ariadne:Bridgelux-Vero-29-mech U13
+L ariadne-rescue:Bridgelux-Vero-29-mech-ariadne U13
 U 1 1 6011398A
 P 8000 10200
 F 0 "U13" H 7950 9650 50  0000 L CNN
@@ -1724,7 +1724,7 @@ F 3 "" H 8000 10200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L ariadne:Bridgelux-Vero-18-mech U15
+L ariadne-rescue:Bridgelux-Vero-18-mech-ariadne U15
 U 1 1 60114956
 P 9050 10200
 F 0 "U15" H 9178 10188 50  0000 L CNN
@@ -1735,7 +1735,7 @@ F 3 "" H 9050 10200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L ariadne:Noctua-NF-A4x10-Fan-mech U11
+L ariadne-rescue:Noctua-NF-A4x10-Fan-mech-ariadne U11
 U 1 1 60137C73
 P 6450 10250
 F 0 "U11" H 6878 10213 50  0000 L CNN
