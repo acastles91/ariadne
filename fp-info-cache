@@ -1,4 +1,4 @@
-18252079798347038
+18260138153899038
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -80269,6 +80269,27 @@ IRF5305
 3
 3
 ariadne
+MeanWell-LDH-45B-1050
+
+
+0
+7
+7
+ariadne
+MeanWell-LDH-45B-1050-ariadne
+
+
+0
+7
+7
+ariadne
+MeanWell-LDH-65
+
+
+0
+6
+6
+ariadne
 Meanwell-LDD-1xxxL
 
 
@@ -80296,6 +80317,20 @@ Noctua-NF-A4x10-mech
 0
 7
 4
+ariadne
+POWER_JACK_DCJ250-20-B-K1-A
+
+
+0
+5
+3
+ariadne
+SWITCH_ROCKER-300DP3J1BLKM6QE
+
+
+0
+8
+3
 ariadne
 Vero-13
 

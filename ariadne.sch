@@ -1,7 +1,7 @@
 EESchema Schematic File Version 4
 EELAYER 30 0
 EELAYER END
-$Descr A3 16535 11693
+$Descr A2 23386 16535
 encoding utf-8
 Sheet 1 1
 Title "Ariadne"
@@ -23,17 +23,6 @@ F 2 "ariadne:ESP32-DEVKIT" H 9250 1700 50  0001 C CNN
 F 3 "" H 9250 1700 50  0001 C CNN
 	1    9300 1650
 	1    0    0    -1  
-$EndComp
-$Comp
-L ariadne-rescue:Connector-POWER-ariadne U1
-U 1 1 5F84F534
-P 1600 1600
-F 0 "U1" V 1604 1538 50  0000 L CNN
-F 1 "Connector-POWER" V 1695 1538 50  0000 L CNN
-F 2 "OpenCelluloid:WAGO_PCB_Klemme_2Pol" H 1600 1600 50  0001 C CNN
-F 3 "" H 1600 1600 50  0001 C CNN
-	1    1600 1600
-	-1   0    0    1   
 $EndComp
 $Comp
 L ariadne-rescue:OKI-78SR-3.3_1.5-W36-C-ariadne U10
@@ -74,7 +63,7 @@ U 1 1 5F853A6F
 P 2000 2900
 F 0 "Q1" H 2155 2946 50  0000 L CNN
 F 1 "IRF5305-Reverse-Polarity" H 2155 2855 50  0000 L CNN
-F 2 "ariadne:IRF5305" H 2150 2825 50  0001 L CIN
+F 2 "Package_TO_SOT_THT:TO-220-3_Horizontal_TabDown" H 2150 2825 50  0001 L CIN
 F 3 "http://www.irf.com/product-info/datasheets/data/irf7606pbf.pdf" V 1950 2900 50  0001 L CNN
 	1    2000 2900
 	1    0    0    -1  
@@ -112,27 +101,6 @@ F 3 "~" H 2050 3600 50  0001 C CNN
 	1    2050 3600
 	0    1    1    0   
 $EndComp
-$Comp
-L ariadne-rescue:Power-Button-OpenSourceCelluloid U7
-U 1 1 5F8ACF92
-P 2600 2200
-F 0 "U7" V 2646 2222 50  0000 R CNN
-F 1 "Power-Button" V 2555 2222 50  0000 R CNN
-F 2 "OpenCelluloid:WAGO_PCB_Klemme_3Pol" H 2600 2200 50  0001 C CNN
-F 3 "" H 2600 2200 50  0001 C CNN
-	1    2600 2200
-	0    -1   -1   0   
-$EndComp
-Connection ~ 1750 1450
-Wire Wire Line
-	1750 2200 2050 2200
-Wire Wire Line
-	1750 1450 1750 2050
-Wire Wire Line
-	1750 2050 2050 2050
-Connection ~ 1750 2050
-Wire Wire Line
-	1750 2050 1750 2200
 Wire Wire Line
 	2050 2350 2050 2700
 Wire Wire Line
@@ -150,7 +118,6 @@ F 3 "" H 1350 3850 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	1350 3850 1350 3500
-Connection ~ 1350 1450
 $Comp
 L Device:D_Schottky D1
 U 1 1 5F8BC81B
@@ -183,9 +150,6 @@ Wire Wire Line
 Connection ~ 1750 2900
 Wire Wire Line
 	1400 2900 1350 2900
-Connection ~ 1350 2900
-Wire Wire Line
-	1350 2900 1350 1450
 Text GLabel 3800 10850 2    50   Input ~ 0
 45B_OUT-
 Text GLabel 3800 10750 2    50   Input ~ 0
@@ -369,8 +333,6 @@ Wire Wire Line
 	5750 2750 5750 2500
 Text GLabel 8700 1550 0    50   Input ~ 0
 LDD_1200-DIM
-Text GLabel 2000 8600 0    50   Input ~ 0
-LDH_45B-DIM
 Text GLabel 8700 1450 0    50   Input ~ 0
 LDH_45B-DIM
 Text GLabel 9900 1950 2    50   Input ~ 0
@@ -948,17 +910,13 @@ Text GLabel 8700 1350 0    50   Input ~ 0
 NILS-PWM+
 Wire Wire Line
 	2050 3600 2050 3850
-Wire Wire Line
-	1750 1000 1750 1450
-Text GLabel 1750 1000 2    50   Input ~ 0
+Text GLabel 1650 1500 3    50   Input ~ 0
 POWER-IN+
-Text GLabel 1350 1000 0    50   Input ~ 0
+Text GLabel 1450 1500 3    50   Input ~ 0
 POWER-IN-
 Connection ~ 1350 3500
 Wire Wire Line
 	1350 3500 1350 2900
-Wire Wire Line
-	1350 1000 1350 1450
 $Comp
 L power:+24V #PWR06
 U 1 1 5FA89798
@@ -1313,7 +1271,6 @@ Wire Notes Line
 	3400 4350 3400 750 
 Wire Notes Line
 	3400 750  550  750 
-NoConn ~ 2000 8700
 $Comp
 L ariadne-rescue:Connector-LED-ariadne U4
 U 1 1 5FBCC453
@@ -1420,7 +1377,7 @@ U 1 1 5FC6CA90
 P 8600 6350
 F 0 "Q2" V 8835 6350 50  0000 C CNN
 F 1 "MMBT3904" V 8926 6350 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 8800 6275 50  0001 L CIN
+F 2 "Package_TO_SOT_THT:TO-92" H 8800 6275 50  0001 L CIN
 F 3 "https://www.fairchildsemi.com/datasheets/2N/2N3904.pdf" H 8600 6350 50  0001 L CNN
 	1    8600 6350
 	0    1    1    0   
@@ -1562,12 +1519,6 @@ Wire Wire Line
 Connection ~ 9400 7350
 Wire Wire Line
 	9400 7350 10100 7350
-Wire Wire Line
-	1800 8900 1800 8800
-Wire Wire Line
-	1550 9000 2000 9000
-Wire Wire Line
-	1800 8800 2000 8800
 $Comp
 L ariadne-rescue:LDH-45B-1050-connector-ariadne U3
 U 1 1 5FE3450C
@@ -1590,15 +1541,13 @@ F 3 "" H 1900 10350 50  0001 C CNN
 	1    1900 10350
 	-1   0    0    -1  
 $EndComp
-Wire Wire Line
-	1800 8900 2000 8900
 $Comp
 L ariadne-rescue:LDH-45B-1050-mech-ariadne U8
 U 1 1 5FE9BF38
 P 3000 10350
 F 0 "U8" H 3300 10515 50  0000 C CNN
 F 1 "LDH-45B-1050-mech" H 3300 10424 50  0000 C CNN
-F 2 "OpenCelluloid:MeanWell-LDH-45B-1050" H 3000 10350 50  0001 C CNN
+F 2 "ariadne:MeanWell-LDH-45B-1050-ariadne" H 3000 10350 50  0001 C CNN
 F 3 "" H 3000 10350 50  0001 C CNN
 	1    3000 10350
 	1    0    0    -1  
@@ -1607,10 +1556,6 @@ Text GLabel 2050 3850 2    50   Input ~ 0
 VIN+Master
 Text GLabel 1350 3850 2    50   Input ~ 0
 VIN-Master
-Text GLabel 1800 8800 0    50   Input ~ 0
-VIN-Master
-Text GLabel 1550 9000 0    50   Input ~ 0
-VIN+Master
 Wire Wire Line
 	2100 10450 2800 10450
 Wire Wire Line
@@ -1745,4 +1690,128 @@ F 3 "" H 5300 10600 50  0001 C CNN
 	1    6450 10250
 	1    0    0    -1  
 $EndComp
+$Comp
+L ariadne:SWITCH_ROCKER-300DP3J1BLKM6QE U26
+U 1 1 5FAE568D
+P 2300 2250
+F 0 "U26" V 2765 2225 50  0000 C CNN
+F 1 "SWITCH_ROCKER-300DP3J1BLKM6QE" V 2674 2225 50  0000 C CNN
+F 2 "ariadne:SWITCH_ROCKER-300DP3J1BLKM6QE" H 2300 2250 50  0001 C CNN
+F 3 "" H 2300 2250 50  0001 C CNN
+	1    2300 2250
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	1750 2150 2050 2150
+NoConn ~ 2600 2250
+$Comp
+L ariadne-rescue:Connector-LED-ariadne U28
+U 1 1 5FB1745A
+P 2300 13300
+F 0 "U28" H 2350 13465 50  0000 C CNN
+F 1 "Connector-LED" H 2350 13374 50  0000 C CNN
+F 2 "Connector_JST:JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical" H 2350 13283 50  0000 C CNN
+F 3 "" H 2300 13300 50  0001 C CNN
+	1    2300 13300
+	1    0    0    -1  
+$EndComp
+Text GLabel 2100 12350 0    50   Input ~ 0
+VIN-Master
+Text GLabel 2100 12250 0    50   Input ~ 0
+VIN+Master
+Wire Notes Line
+	4550 14800 4550 11650
+Wire Notes Line
+	4550 11650 700  11650
+Wire Notes Line
+	700  11650 700  14800
+Wire Notes Line
+	700  14800 4550 14800
+$Comp
+L ariadne:LDH-65B-connector U27
+U 1 1 5FB30EF1
+P 2300 12150
+F 0 "U27" H 3028 11946 50  0000 L CNN
+F 1 "LDH-65B-connector-master" H 3028 11855 50  0000 L CNN
+F 2 "Connector_Molex:Molex_Micro-Fit_3.0_43650-0400_1x04_P3.00mm_Horizontal" H 2300 12150 50  0001 C CNN
+F 3 "" H 2300 12150 50  0001 C CNN
+	1    2300 12150
+	1    0    0    -1  
+$EndComp
+Text GLabel 9900 1550 2    50   Input ~ 0
+LDH-65B-DIM
+Text GLabel 2100 12550 0    50   Input ~ 0
+LDH-65B-DIM
+Text GLabel 9950 2250 2    50   Input ~ 0
+BOARD_GND
+Text GLabel 2100 12450 0    50   Input ~ 0
+BOARD_GND
+$Comp
+L ariadne:LDH-65B-connector U7
+U 1 1 5FB4E63C
+P 1950 13900
+F 0 "U7" H 2192 14065 50  0000 C CNN
+F 1 "LDH-65B-connector-master" H 2192 13974 50  0000 C CNN
+F 2 "Connector_Molex:Molex_Micro-Fit_3.0_43650-0400_1x04_P3.00mm_Horizontal" H 1950 13900 50  0001 C CNN
+F 3 "" H 1950 13900 50  0001 C CNN
+	1    1950 13900
+	-1   0    0    -1  
+$EndComp
+$Comp
+L ariadne:LDH-65B-mech U29
+U 1 1 5FB6658C
+P 2800 13900
+F 0 "U29" H 3100 14065 50  0000 C CNN
+F 1 "LDH-65B-mech" H 3100 13974 50  0000 C CNN
+F 2 "ariadne:MeanWell-LDH-65" H 2800 13900 50  0001 C CNN
+F 3 "" H 2800 13900 50  0001 C CNN
+	1    2800 13900
+	1    0    0    -1  
+$EndComp
+Text GLabel 3600 14200 2    50   Input ~ 0
+65B_OUT+
+Text GLabel 3600 14300 2    50   Input ~ 0
+65B_OUT-
+Wire Wire Line
+	2150 14000 2600 14000
+Wire Wire Line
+	2150 14100 2600 14100
+Wire Wire Line
+	2150 14200 2600 14200
+Wire Wire Line
+	2150 14300 2600 14300
+Text GLabel 2550 13450 2    50   Input ~ 0
+65B_OUT-
+Text GLabel 2150 13450 0    50   Input ~ 0
+65B_OUT+
+Wire Wire Line
+	1650 1500 1750 1500
+Wire Wire Line
+	1750 1500 1750 2150
+Wire Wire Line
+	1350 1500 1350 2900
+Connection ~ 1350 2900
+Wire Wire Line
+	1350 1500 1450 1500
+$Comp
+L ariadne:POWER_CONNECTOR-DCJ250-20-B-K1-A U1
+U 1 1 5FBF2303
+P 1550 1250
+F 0 "U1" H 1322 1204 50  0000 R CNN
+F 1 "POWER_CONNECTOR-DCJ250-20-B-K1-A" H 1322 1295 50  0000 R CNN
+F 2 "ariadne:POWER_JACK_DCJ250-20-B-K1-A" H 1550 1250 50  0001 C CNN
+F 3 "" H 1550 1250 50  0001 C CNN
+	1    1550 1250
+	-1   0    0    1   
+$EndComp
+NoConn ~ 1550 1000
+NoConn ~ 2000 8900
+Text GLabel 2000 8800 0    50   Input ~ 0
+BOARD_GND
+Text GLabel 2000 8600 0    50   Input ~ 0
+VIN+Master
+Text GLabel 2000 8700 0    50   Input ~ 0
+VIN-Master
+Text GLabel 2000 9000 0    50   Input ~ 0
+LDH_45B-DIM
 $EndSCHEMATC
