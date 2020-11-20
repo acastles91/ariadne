@@ -108,13 +108,13 @@ Wire Wire Line
 $Comp
 L power:GND #PWR01
 U 1 1 5F8B7B07
-P 1350 3850
-F 0 "#PWR01" H 1350 3600 50  0001 C CNN
-F 1 "GND" H 1355 3677 50  0000 C CNN
-F 2 "" H 1350 3850 50  0001 C CNN
-F 3 "" H 1350 3850 50  0001 C CNN
-	1    1350 3850
-	0    1    1    0   
+P 1350 3950
+F 0 "#PWR01" H 1350 3700 50  0001 C CNN
+F 1 "GND" H 1355 3777 50  0000 C CNN
+F 2 "" H 1350 3950 50  0001 C CNN
+F 3 "" H 1350 3950 50  0001 C CNN
+	1    1350 3950
+	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	1350 3850 1350 3500
@@ -123,7 +123,7 @@ L Device:D_Schottky D1
 U 1 1 5F8BC81B
 P 1900 3250
 F 0 "D1" H 1900 3033 50  0000 C CNN
-F 1 "D_Schottky" H 1900 3124 50  0000 C CNN
+F 1 "D_Zener" H 1900 3124 50  0000 C CNN
 F 2 "Diode_THT:D_DO-41_SOD81_P7.62mm_Horizontal" H 1900 3250 50  0001 C CNN
 F 3 "~" H 1900 3250 50  0001 C CNN
 	1    1900 3250
@@ -549,269 +549,49 @@ Wire Wire Line
 Wire Wire Line
 	10900 2350 9900 2350
 $Comp
-L ariadne-rescue:01x15_2.50mm_HEADER_PIN-ariadne U25
-U 1 1 5FA8CCC2
-P 14600 7600
-F 0 "U25" H 14828 7696 50  0000 L CNN
-F 1 "01x15_2.50mm_HEADER_PIN" H 14828 7605 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x15_P2.54mm_Vertical" H 14600 7600 50  0001 C CNN
-F 3 "" H 14600 7600 50  0001 C CNN
-	1    14600 7600
-	1    0    0    -1  
-$EndComp
-$Comp
-L ariadne-rescue:01x15_2.50mm_HEADER_PIN-ariadne U22
-U 1 1 5FA8FF77
-P 13800 7600
-F 0 "U22" H 14028 7696 50  0000 L CNN
-F 1 "01x15_2.50mm_HEADER_PIN" H 14028 7605 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x15_P2.54mm_Vertical" H 13800 7600 50  0001 C CNN
-F 3 "" H 13800 7600 50  0001 C CNN
-	1    13800 7600
-	1    0    0    -1  
-$EndComp
-$Comp
-L ariadne-rescue:01x15_2.50mm_HEADER_PIN-ariadne U21
-U 1 1 5FA90DF1
-P 13000 7600
-F 0 "U21" H 13228 7696 50  0000 L CNN
-F 1 "01x15_2.50mm_HEADER_PIN" H 13228 7605 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x15_P2.54mm_Vertical" H 13000 7600 50  0001 C CNN
-F 3 "" H 13000 7600 50  0001 C CNN
-	1    13000 7600
-	1    0    0    -1  
-$EndComp
-$Comp
-L ariadne-rescue:01x15_2.50mm_HEADER_PIN-ariadne U19
-U 1 1 5FA915BA
-P 12150 7600
-F 0 "U19" H 12378 7696 50  0000 L CNN
-F 1 "01x15_2.50mm_HEADER_PIN" H 12378 7605 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x15_P2.54mm_Vertical" H 12150 7600 50  0001 C CNN
-F 3 "" H 12150 7600 50  0001 C CNN
-	1    12150 7600
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	12050 6850 12050 6950
-Connection ~ 12050 6950
-Wire Wire Line
-	12050 6950 12050 7050
-Connection ~ 12050 7050
-Wire Wire Line
-	12050 7050 12050 7150
-Connection ~ 12050 7150
-Wire Wire Line
-	12050 7150 12050 7250
-Connection ~ 12050 7250
-Wire Wire Line
-	12050 7250 12050 7350
-Connection ~ 12050 7350
-Wire Wire Line
-	12050 7350 12050 7450
-Connection ~ 12050 7450
-Wire Wire Line
-	12050 7450 12050 7550
-Connection ~ 12050 7550
-Wire Wire Line
-	12050 7550 12050 7650
-Connection ~ 12050 7650
-Wire Wire Line
-	12050 7650 12050 7750
-Connection ~ 12050 7750
-Wire Wire Line
-	12050 7750 12050 7850
-Connection ~ 12050 7850
-Wire Wire Line
-	12050 7850 12050 7950
-Connection ~ 12050 7950
-Wire Wire Line
-	12050 7950 12050 8050
-Connection ~ 12050 8050
-Wire Wire Line
-	12050 8050 12050 8150
-Connection ~ 12050 8150
-Wire Wire Line
-	12050 8150 12050 8250
-$Comp
 L power:GND #PWR035
 U 1 1 5FA94EF2
-P 12050 8500
-F 0 "#PWR035" H 12050 8250 50  0001 C CNN
-F 1 "GND" H 12055 8327 50  0000 C CNN
-F 2 "" H 12050 8500 50  0001 C CNN
-F 3 "" H 12050 8500 50  0001 C CNN
-	1    12050 8500
+P 12750 8050
+F 0 "#PWR035" H 12750 7800 50  0001 C CNN
+F 1 "GND" H 12755 7877 50  0000 C CNN
+F 2 "" H 12750 8050 50  0001 C CNN
+F 3 "" H 12750 8050 50  0001 C CNN
+	1    12750 8050
 	1    0    0    -1  
 $EndComp
-Connection ~ 12050 8250
-Wire Wire Line
-	12900 6850 12900 6950
-Connection ~ 12900 6950
-Wire Wire Line
-	12900 6950 12900 7050
-Connection ~ 12900 7050
-Wire Wire Line
-	12900 7050 12900 7150
-Connection ~ 12900 7150
-Wire Wire Line
-	12900 7150 12900 7250
-Connection ~ 12900 7250
-Wire Wire Line
-	12900 7250 12900 7350
-Connection ~ 12900 7350
-Wire Wire Line
-	12900 7350 12900 7450
-Connection ~ 12900 7450
-Wire Wire Line
-	12900 7450 12900 7550
-Connection ~ 12900 7550
-Wire Wire Line
-	12900 7550 12900 7650
-Connection ~ 12900 7650
-Wire Wire Line
-	12900 7650 12900 7750
-Connection ~ 12900 7750
-Wire Wire Line
-	12900 7750 12900 7850
-Connection ~ 12900 7850
-Wire Wire Line
-	12900 7850 12900 7950
-Connection ~ 12900 7950
-Wire Wire Line
-	12900 7950 12900 8050
-Connection ~ 12900 8050
-Wire Wire Line
-	12900 8050 12900 8150
-Connection ~ 12900 8150
-Wire Wire Line
-	12900 8150 12900 8250
 $Comp
 L power:+12V #PWR036
 U 1 1 5FAB4F76
-P 12900 6550
-F 0 "#PWR036" H 12900 6400 50  0001 C CNN
-F 1 "+12V" H 12915 6723 50  0000 C CNN
-F 2 "" H 12900 6550 50  0001 C CNN
-F 3 "" H 12900 6550 50  0001 C CNN
-	1    12900 6550
-	1    0    0    -1  
+P 13300 8050
+F 0 "#PWR036" H 13300 7900 50  0001 C CNN
+F 1 "+12V" H 13315 8223 50  0000 C CNN
+F 2 "" H 13300 8050 50  0001 C CNN
+F 3 "" H 13300 8050 50  0001 C CNN
+	1    13300 8050
+	-1   0    0    1   
 $EndComp
-Connection ~ 12900 6850
-Wire Wire Line
-	12900 6850 12900 6550
 $Comp
 L power:+5V #PWR037
 U 1 1 5FAC6026
-P 13700 6500
-F 0 "#PWR037" H 13700 6350 50  0001 C CNN
-F 1 "+5V" H 13715 6673 50  0000 C CNN
-F 2 "" H 13700 6500 50  0001 C CNN
-F 3 "" H 13700 6500 50  0001 C CNN
-	1    13700 6500
-	1    0    0    -1  
+P 13850 8050
+F 0 "#PWR037" H 13850 7900 50  0001 C CNN
+F 1 "+5V" H 13865 8223 50  0000 C CNN
+F 2 "" H 13850 8050 50  0001 C CNN
+F 3 "" H 13850 8050 50  0001 C CNN
+	1    13850 8050
+	-1   0    0    1   
 $EndComp
-Wire Wire Line
-	13700 6500 13700 6850
-Wire Wire Line
-	12050 8250 12050 8500
-Connection ~ 13700 6850
-Wire Wire Line
-	13700 6850 13700 6950
-Connection ~ 13700 6950
-Wire Wire Line
-	13700 6950 13700 7050
-Connection ~ 13700 7050
-Wire Wire Line
-	13700 7050 13700 7150
-Connection ~ 13700 7150
-Wire Wire Line
-	13700 7150 13700 7250
-Connection ~ 13700 7250
-Wire Wire Line
-	13700 7250 13700 7350
-Connection ~ 13700 7350
-Wire Wire Line
-	13700 7350 13700 7450
-Connection ~ 13700 7450
-Wire Wire Line
-	13700 7450 13700 7550
-Connection ~ 13700 7550
-Wire Wire Line
-	13700 7550 13700 7650
-Connection ~ 13700 7650
-Wire Wire Line
-	13700 7650 13700 7750
-Connection ~ 13700 7750
-Wire Wire Line
-	13700 7750 13700 7850
-Connection ~ 13700 7850
-Wire Wire Line
-	13700 7850 13700 7950
-Connection ~ 13700 7950
-Wire Wire Line
-	13700 7950 13700 8050
-Connection ~ 13700 8050
-Wire Wire Line
-	13700 8050 13700 8150
-Connection ~ 13700 8150
-Wire Wire Line
-	13700 8150 13700 8250
 $Comp
 L power:+3.3V #PWR038
 U 1 1 5FACD028
-P 14500 6450
-F 0 "#PWR038" H 14500 6300 50  0001 C CNN
-F 1 "+3.3V" H 14515 6623 50  0000 C CNN
-F 2 "" H 14500 6450 50  0001 C CNN
-F 3 "" H 14500 6450 50  0001 C CNN
-	1    14500 6450
-	1    0    0    -1  
+P 14450 8050
+F 0 "#PWR038" H 14450 7900 50  0001 C CNN
+F 1 "+3.3V" H 14465 8223 50  0000 C CNN
+F 2 "" H 14450 8050 50  0001 C CNN
+F 3 "" H 14450 8050 50  0001 C CNN
+	1    14450 8050
+	-1   0    0    1   
 $EndComp
-Wire Wire Line
-	14500 6450 14500 6850
-Connection ~ 14500 6850
-Wire Wire Line
-	14500 6850 14500 6950
-Connection ~ 14500 6950
-Wire Wire Line
-	14500 6950 14500 7050
-Connection ~ 14500 7050
-Wire Wire Line
-	14500 7050 14500 7150
-Connection ~ 14500 7150
-Wire Wire Line
-	14500 7150 14500 7250
-Connection ~ 14500 7250
-Wire Wire Line
-	14500 7250 14500 7350
-Connection ~ 14500 7350
-Wire Wire Line
-	14500 7350 14500 7450
-Connection ~ 14500 7450
-Wire Wire Line
-	14500 7450 14500 7550
-Connection ~ 14500 7550
-Wire Wire Line
-	14500 7550 14500 7650
-Connection ~ 14500 7650
-Wire Wire Line
-	14500 7650 14500 7750
-Connection ~ 14500 7750
-Wire Wire Line
-	14500 7750 14500 7850
-Connection ~ 14500 7850
-Wire Wire Line
-	14500 7850 14500 7950
-Connection ~ 14500 7950
-Wire Wire Line
-	14500 7950 14500 8050
-Connection ~ 14500 8050
-Wire Wire Line
-	14500 8050 14500 8150
-Connection ~ 14500 8150
-Wire Wire Line
-	14500 8150 14500 8250
 $Comp
 L ariadne-rescue:GB215AP-ariadne SW1
 U 1 1 5FAFA5B7
@@ -875,7 +655,7 @@ U 1 1 5FB1994A
 P 8550 8450
 F 0 "U14" H 8928 8496 50  0000 L CNN
 F 1 "Noctua-NF-A4x10-Fan" H 8100 8000 50  0000 L CNN
-F 2 "Connector_Molex:Molex_Micro-Fit_3.0_43650-0400_1x04_P3.00mm_Horizontal" H 7700 8800 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 7700 8800 50  0001 C CNN
 F 3 "" H 7700 8800 50  0001 C CNN
 	1    8550 8450
 	1    0    0    -1  
@@ -1552,9 +1332,9 @@ F 3 "" H 3000 10350 50  0001 C CNN
 	1    3000 10350
 	1    0    0    -1  
 $EndComp
-Text GLabel 2050 3850 2    50   Input ~ 0
+Text GLabel 2500 3850 2    50   Input ~ 0
 VIN+Master
-Text GLabel 1350 3850 2    50   Input ~ 0
+Text GLabel 1000 3850 0    50   Input ~ 0
 VIN-Master
 Wire Wire Line
 	2100 10450 2800 10450
@@ -1682,12 +1462,12 @@ $EndComp
 $Comp
 L ariadne-rescue:Noctua-NF-A4x10-Fan-mech-ariadne U11
 U 1 1 60137C73
-P 6450 10250
-F 0 "U11" H 6878 10213 50  0000 L CNN
-F 1 "Noctua-NF-A4x10-Fan-mech" H 6878 10122 50  0000 L CNN
-F 2 "ariadne:Noctua-NF-A4x10" H 5300 10600 50  0001 C CNN
-F 3 "" H 5300 10600 50  0001 C CNN
-	1    6450 10250
+P 6500 10850
+F 0 "U11" H 6928 10813 50  0000 L CNN
+F 1 "Noctua-NF-A4x10-Fan-mech" H 6928 10722 50  0000 L CNN
+F 2 "ariadne:Noctua-NF-A4x10-mech" H 5350 11200 50  0001 C CNN
+F 3 "" H 5350 11200 50  0001 C CNN
+	1    6500 10850
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1814,4 +1594,115 @@ Text GLabel 2000 8700 0    50   Input ~ 0
 VIN-Master
 Text GLabel 2000 9000 0    50   Input ~ 0
 LDH_45B-DIM
+$Comp
+L Connector:Conn_01x05_Male J1
+U 1 1 5FB34AB4
+P 12550 7850
+F 0 "J1" H 12658 8231 50  0000 C CNN
+F 1 "Conn_01x05_Male" H 12658 8140 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical" H 12550 7850 50  0001 C CNN
+F 3 "~" H 12550 7850 50  0001 C CNN
+	1    12550 7850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x05_Male J2
+U 1 1 5FB364E2
+P 13100 7850
+F 0 "J2" H 13208 8231 50  0000 C CNN
+F 1 "Conn_01x05_Male" H 13208 8140 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical" H 13100 7850 50  0001 C CNN
+F 3 "~" H 13100 7850 50  0001 C CNN
+	1    13100 7850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x05_Male J3
+U 1 1 5FB36AC4
+P 13650 7850
+F 0 "J3" H 13758 8231 50  0000 C CNN
+F 1 "Conn_01x05_Male" H 13758 8140 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical" H 13650 7850 50  0001 C CNN
+F 3 "~" H 13650 7850 50  0001 C CNN
+	1    13650 7850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x05_Male J4
+U 1 1 5FB36E6D
+P 14250 7850
+F 0 "J4" H 14358 8231 50  0000 C CNN
+F 1 "Conn_01x05_Male" H 14358 8140 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical" H 14250 7850 50  0001 C CNN
+F 3 "~" H 14250 7850 50  0001 C CNN
+	1    14250 7850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12750 7650 12750 7750
+Connection ~ 12750 8050
+Connection ~ 12750 7750
+Wire Wire Line
+	12750 7750 12750 7850
+Connection ~ 12750 7850
+Wire Wire Line
+	12750 7850 12750 7950
+Connection ~ 12750 7950
+Wire Wire Line
+	12750 7950 12750 8050
+Wire Wire Line
+	13300 7650 13300 7750
+Connection ~ 13300 8050
+Connection ~ 13300 7750
+Wire Wire Line
+	13300 7750 13300 7850
+Connection ~ 13300 7850
+Wire Wire Line
+	13300 7850 13300 7950
+Connection ~ 13300 7950
+Wire Wire Line
+	13300 7950 13300 8050
+Wire Wire Line
+	13850 7650 13850 7750
+Connection ~ 13850 8050
+Connection ~ 13850 7750
+Wire Wire Line
+	13850 7750 13850 7850
+Connection ~ 13850 7850
+Wire Wire Line
+	13850 7850 13850 7950
+Connection ~ 13850 7950
+Wire Wire Line
+	13850 7950 13850 8050
+Wire Wire Line
+	2050 3850 2500 3850
+Connection ~ 2050 3850
+Wire Wire Line
+	1350 3850 1000 3850
+Wire Wire Line
+	1350 3850 1350 3950
+Connection ~ 1350 3850
+Wire Wire Line
+	14450 7650 14450 7750
+Connection ~ 14450 8050
+Connection ~ 14450 7750
+Wire Wire Line
+	14450 7750 14450 7850
+Connection ~ 14450 7850
+Wire Wire Line
+	14450 7850 14450 7950
+Connection ~ 14450 7950
+Wire Wire Line
+	14450 7950 14450 8050
+$Comp
+L ariadne-rescue:Noctua-NF-A4x10-Fan-mech-ariadne U19
+U 1 1 5FC4F86D
+P 8350 11700
+F 0 "U19" H 8778 11663 50  0000 L CNN
+F 1 "Noctua-NF-A4x10-Fan-mech-ariadne" H 8778 11572 50  0000 L CNN
+F 2 "ariadne:Noctua-NF-A4x10-mech" H 7200 12050 50  0001 C CNN
+F 3 "" H 7200 12050 50  0001 C CNN
+	1    8350 11700
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
