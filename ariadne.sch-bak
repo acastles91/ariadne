@@ -1462,12 +1462,12 @@ $EndComp
 $Comp
 L ariadne-rescue:Noctua-NF-A4x10-Fan-mech-ariadne U11
 U 1 1 60137C73
-P 6450 10250
-F 0 "U11" H 6878 10213 50  0000 L CNN
-F 1 "Noctua-NF-A4x10-Fan-mech" H 6878 10122 50  0000 L CNN
-F 2 "ariadne:Noctua-NF-A4x10-mech" H 5300 10600 50  0001 C CNN
-F 3 "" H 5300 10600 50  0001 C CNN
-	1    6450 10250
+P 6500 10850
+F 0 "U11" H 6928 10813 50  0000 L CNN
+F 1 "Noctua-NF-A4x10-Fan-mech" H 6928 10722 50  0000 L CNN
+F 2 "ariadne:Noctua-NF-A4x10-mech" H 5350 11200 50  0001 C CNN
+F 3 "" H 5350 11200 50  0001 C CNN
+	1    6500 10850
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1694,4 +1694,15 @@ Wire Wire Line
 Connection ~ 14450 7950
 Wire Wire Line
 	14450 7950 14450 8050
+$Comp
+L ariadne-rescue:Noctua-NF-A4x10-Fan-mech-ariadne U19
+U 1 1 5FC4F86D
+P 8350 11700
+F 0 "U19" H 8778 11663 50  0000 L CNN
+F 1 "Noctua-NF-A4x10-Fan-mech-ariadne" H 8778 11572 50  0000 L CNN
+F 2 "ariadne:Noctua-NF-A4x10-mech" H 7200 12050 50  0001 C CNN
+F 3 "" H 7200 12050 50  0001 C CNN
+	1    8350 11700
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

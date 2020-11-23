@@ -1471,7 +1471,7 @@ F 3 "" H 5350 11200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L ariadne:SWITCH_ROCKER-300DP3J1BLKM6QE U26
+L ariadne-rescue:SWITCH_ROCKER-300DP3J1BLKM6QE-ariadne U26
 U 1 1 5FAE568D
 P 2300 2250
 F 0 "U26" V 2765 2225 50  0000 C CNN
@@ -1508,7 +1508,7 @@ Wire Notes Line
 Wire Notes Line
 	700  14800 4550 14800
 $Comp
-L ariadne:LDH-65B-connector U27
+L ariadne-rescue:LDH-65B-connector-ariadne U27
 U 1 1 5FB30EF1
 P 2300 12150
 F 0 "U27" H 3028 11946 50  0000 L CNN
@@ -1527,7 +1527,7 @@ BOARD_GND
 Text GLabel 2100 12450 0    50   Input ~ 0
 BOARD_GND
 $Comp
-L ariadne:LDH-65B-connector U7
+L ariadne-rescue:LDH-65B-connector-ariadne U7
 U 1 1 5FB4E63C
 P 1950 13900
 F 0 "U7" H 2192 14065 50  0000 C CNN
@@ -1538,7 +1538,7 @@ F 3 "" H 1950 13900 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L ariadne:LDH-65B-mech U29
+L ariadne-rescue:LDH-65B-mech-ariadne U29
 U 1 1 5FB6658C
 P 2800 13900
 F 0 "U29" H 3100 14065 50  0000 C CNN
@@ -1574,7 +1574,7 @@ Connection ~ 1350 2900
 Wire Wire Line
 	1350 1500 1450 1500
 $Comp
-L ariadne:POWER_CONNECTOR-DCJ250-20-B-K1-A U1
+L ariadne-rescue:POWER_CONNECTOR-DCJ250-20-B-K1-A-ariadne U1
 U 1 1 5FBF2303
 P 1550 1250
 F 0 "U1" H 1322 1204 50  0000 R CNN
