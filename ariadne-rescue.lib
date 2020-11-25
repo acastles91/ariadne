@@ -41,6 +41,19 @@ X ~ 0 0 -250 100 U 50 50 1 1 N
 ENDDRAW
 ENDDEF
 #
+# Bridgelux-Vero-18-mech-v3-ariadne
+#
+DEF Bridgelux-Vero-18-mech-v3-ariadne U 0 40 Y Y 1 F N
+F0 "U" 0 -50 50 H V C CNN
+F1 "Bridgelux-Vero-18-mech-v3-ariadne" 0 450 50 H V C CNN
+F2 "ariadne:Vero-18" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+S -100 150 100 -150 0 1 0 N
+X ~ 0 0 -250 100 U 50 50 1 1 N
+ENDDRAW
+ENDDEF
+#
 # Bridgelux-Vero-29-mech-ariadne
 #
 DEF Bridgelux-Vero-29-mech-ariadne U 0 40 Y Y 1 F N
@@ -79,7 +92,7 @@ ENDDEF
 DEF Connector-LED-ariadne U 0 40 Y Y 1 F N
 F0 "U" 50 -50 50 H V C CNN
 F1 "Connector-LED-ariadne" 50 50 50 H V C CNN
-F2 "Connector_JST:JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical" 0 0 50 H V C CNN
+F2 "Connector_JST:JST_XH_B2B-XH-AM_1x02_P2.50mm_Vertical" 0 0 50 H V C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
 S -50 -100 150 -200 0 1 0 N
@@ -265,7 +278,28 @@ ENDDEF
 #
 DEF Meanwell-LDD-1200LW-ariadne U 0 40 Y Y 1 F N
 F0 "U" 0 100 50 H V C CNN
-F1 "Meanwell-LDD-1200LW-ariadne" 0 300 50 H V C CNN
+F1 "Meanwell-LDD-1200LW-ariadne" 0 1050 50 H V C CNN
+F2 "ariadne:Meanwell-LDD-1xxxL" -200 0 50 H I C CNN
+F3 "" -200 0 50 H I C CNN
+DRAW
+S -350 350 350 -300 0 1 0 N
+X VIN- 1 -450 -100 100 R 50 50 1 1 I
+X VOUT- 11 450 -200 100 L 50 50 1 1 O
+X VOUT- 12 450 -100 100 L 50 50 1 1 O
+X VOUT+ 13 450 100 100 L 50 50 1 1 O
+X VOUT+ 14 450 200 100 L 50 50 1 1 O
+X VIN- 2 -450 -200 100 R 50 50 1 1 I
+X DIM 21 0 450 100 D 50 50 1 1 I
+X VIN+ 23 -450 200 100 R 50 50 1 1 I
+X VIN+ 24 -450 100 100 R 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
+# Meanwell-LDD-1200LW-ariadne-ariadne-rescue
+#
+DEF Meanwell-LDD-1200LW-ariadne-ariadne-rescue U 0 40 Y Y 1 F N
+F0 "U" 0 100 50 H V C CNN
+F1 "Meanwell-LDD-1200LW-ariadne-ariadne-rescue" 0 300 50 H V C CNN
 F2 "ariadne:Meanwell-LDD-1xxxL" -200 0 50 H I C CNN
 F3 "" -200 0 50 H I C CNN
 DRAW
@@ -314,6 +348,33 @@ ENDDEF
 DEF Noctua-NF-A4x10-Fan-mech-ariadne U 0 40 Y Y 1 F N
 F0 "U" 150 -150 50 H V C CNN
 F1 "Noctua-NF-A4x10-Fan-mech-ariadne" 0 -800 50 H V C CNN
+F2 "ariadne:Noctua-NF-A4x10" -1150 350 50 H I C CNN
+F3 "" -1150 350 50 H I C CNN
+DRAW
+S -400 200 400 -250 0 1 0 N
+X MECH 0 0 -350 100 U 40 40 1 1 N
+ENDDRAW
+ENDDEF
+#
+# Noctua-NF-A4x10-Simple-Fan-ariadne
+#
+DEF Noctua-NF-A4x10-Simple-Fan-ariadne U 0 40 Y Y 1 F N
+F0 "U" 150 -150 50 H V C CNN
+F1 "Noctua-NF-A4x10-Simple-Fan-ariadne" 0 -800 50 H V C CNN
+F2 "ariadne:Noctua-NF-A4x10" -1150 350 50 H I C CNN
+F3 "" -1150 350 50 H I C CNN
+DRAW
+S -400 200 400 -250 0 1 0 N
+X GND 1 -300 300 100 D 50 50 1 1 I
+X 12V 2 -100 300 100 D 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
+# Noctua-NF-A6x25Fan-mech-ariadne
+#
+DEF Noctua-NF-A6x25Fan-mech-ariadne U 0 40 Y Y 1 F N
+F0 "U" 150 -150 50 H V C CNN
+F1 "Noctua-NF-A6x25Fan-mech-ariadne" 0 -800 50 H V C CNN
 F2 "ariadne:Noctua-NF-A4x10" -1150 350 50 H I C CNN
 F3 "" -1150 350 50 H I C CNN
 DRAW
@@ -409,6 +470,19 @@ S -300 150 300 -200 0 1 0 N
 X MECH 0 0 -300 100 U 50 50 1 1 I
 X A 1 -100 250 100 D 50 50 1 1 I
 X B 2 100 250 100 D 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
+# heatsink
+#
+DEF heatsink U 0 40 Y Y 1 F N
+F0 "U" 0 -300 50 H V C CNN
+F1 "heatsink" 50 -200 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+S -250 150 300 -150 0 1 0 N
+X MECH 0 0 250 100 D 50 50 1 1 I
 ENDDRAW
 ENDDEF
 #

@@ -69,7 +69,7 @@ F 3 "http://www.irf.com/product-info/datasheets/data/irf7606pbf.pdf" V 1950 2900
 	1    0    0    -1  
 $EndComp
 $Comp
-L ariadne-rescue:Meanwell-LDD-1200LW-ariadne U24
+L ariadne-rescue:Meanwell-LDD-1200LW-ariadne-ariadne-rescue U24
 U 1 1 5F86EF8E
 P 14350 4450
 F 0 "U24" H 14350 4815 50  0000 C CNN

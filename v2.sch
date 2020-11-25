@@ -1,0 +1,1708 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A2 23386 16535
+encoding utf-8
+Sheet 2 2
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L ariadne-rescue:ESP32-WROOM-32D-ariadne U60
+U 1 1 5FBF11AF
+P 9200 1650
+F 0 "U60" H 9200 2575 50  0000 C CNN
+F 1 "ESP32-WROOM-32D" H 9200 2484 50  0000 C CNN
+F 2 "ariadne:ESP32-DEVKIT" H 9150 1700 50  0001 C CNN
+F 3 "" H 9150 1700 50  0001 C CNN
+	1    9200 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L ariadne-rescue:OKI-78SR-3.3_1.5-W36-C-ariadne U53
+U 1 1 5FBF11B5
+P 5850 3900
+F 0 "U53" H 5850 4215 50  0000 C CNN
+F 1 "OKI-78SR-3.3_1.5-W36-C" H 5850 4124 50  0000 C CNN
+F 2 "Converter_DCDC:Converter_DCDC_muRata_OKI-78SR_Vertical" H 5850 3850 50  0001 C CNN
+F 3 "" H 5850 3800 50  0001 C CNN
+	1    5850 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L ariadne-rescue:CT2084-ND-DIP-SWITCH-ariadne U52
+U 1 1 5FBF11BB
+P 5000 2050
+F 0 "U52" V 4625 2050 50  0000 C CNN
+F 1 "CT2084-ND-DIP-SWITCH" V 4716 2050 50  0000 C CNN
+F 2 "Button_Switch_THT:SW_DIP_SPSTx04_Piano_CTS_Series194-4MSTN_W7.62mm_P2.54mm" H 5200 2050 50  0001 C CNN
+F 3 "" H 5200 2050 50  0001 C CNN
+	1    5000 2050
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:LED D3
+U 1 1 5FBF11C1
+P 15000 1050
+F 0 "D3" H 14993 795 50  0000 C CNN
+F 1 "LED" H 14993 886 50  0000 C CNN
+F 2 "LED_THT:LED_D3.0mm_Horizontal_O1.27mm_Z2.0mm" H 15000 1050 50  0001 C CNN
+F 3 "~" H 15000 1050 50  0001 C CNN
+	1    15000 1050
+	-1   0    0    1   
+$EndComp
+$Comp
+L ariadne-rescue:IRF5305-Reverse-Polarity-ariadne Q2
+U 1 1 5FBF11C7
+P 1900 2850
+F 0 "Q2" H 2055 2896 50  0000 L CNN
+F 1 "IRF5305-Reverse-Polarity" H 2055 2805 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-220-3_Horizontal_TabDown" H 2050 2775 50  0001 L CIN
+F 3 "http://www.irf.com/product-info/datasheets/data/irf7606pbf.pdf" V 1850 2850 50  0001 L CNN
+	1    1900 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L ariadne-rescue:Meanwell-LDD-1200LW-ariadne U65
+U 1 1 5FBF11CD
+P 14250 4450
+F 0 "U65" H 14250 4815 50  0000 C CNN
+F 1 "Meanwell-LDD-1200LW" H 14250 4724 50  0000 C CNN
+F 2 "ariadne:Meanwell-LDD-1xxxL" H 14050 4450 50  0001 C CNN
+F 3 "" H 14050 4450 50  0001 C CNN
+	1    14250 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG0106
+U 1 1 5FBF11D3
+P 1250 3450
+F 0 "#FLG0106" H 1250 3525 50  0001 C CNN
+F 1 "PWR_FLAG" H 1250 3623 50  0000 C CNN
+F 2 "" H 1250 3450 50  0001 C CNN
+F 3 "~" H 1250 3450 50  0001 C CNN
+	1    1250 3450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG0107
+U 1 1 5FBF11D9
+P 1950 3550
+F 0 "#FLG0107" H 1950 3625 50  0001 C CNN
+F 1 "PWR_FLAG" H 1950 3723 50  0000 C CNN
+F 2 "" H 1950 3550 50  0001 C CNN
+F 3 "~" H 1950 3550 50  0001 C CNN
+	1    1950 3550
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1950 2300 1950 2650
+Wire Wire Line
+	1950 3050 1950 3200
+$Comp
+L power:GND #PWR0120
+U 1 1 5FBF11E1
+P 1250 3900
+F 0 "#PWR0120" H 1250 3650 50  0001 C CNN
+F 1 "GND" H 1255 3727 50  0000 C CNN
+F 2 "" H 1250 3900 50  0001 C CNN
+F 3 "" H 1250 3900 50  0001 C CNN
+	1    1250 3900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1250 3800 1250 3450
+$Comp
+L Device:D_Schottky D2
+U 1 1 5FBF11E8
+P 1800 3200
+F 0 "D2" H 1800 2983 50  0000 C CNN
+F 1 "D_Zener" H 1800 3074 50  0000 C CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P7.62mm_Horizontal" H 1800 3200 50  0001 C CNN
+F 3 "~" H 1800 3200 50  0001 C CNN
+	1    1800 3200
+	-1   0    0    1   
+$EndComp
+Connection ~ 1950 3200
+Wire Wire Line
+	1950 3200 1950 3550
+Wire Wire Line
+	1650 3200 1650 2850
+$Comp
+L Device:R R2
+U 1 1 5FBF11F1
+P 1450 2850
+F 0 "R2" V 1243 2850 50  0000 C CNN
+F 1 "R" V 1334 2850 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 1380 2850 50  0001 C CNN
+F 3 "~" H 1450 2850 50  0001 C CNN
+	1    1450 2850
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1600 2850 1650 2850
+Connection ~ 1650 2850
+Wire Wire Line
+	1300 2850 1250 2850
+Text GLabel 3700 10850 2    50   Input ~ 0
+45B_OUT-
+Text GLabel 3700 10750 2    50   Input ~ 0
+45B_OUT+
+Text GLabel 14700 4350 2    50   Input ~ 0
+LDD_1200_OUT+
+Text GLabel 14700 4550 2    50   Input ~ 0
+LDD_1200_OUT-
+Text GLabel 8600 1650 0    50   Input ~ 0
+SW4
+Text GLabel 6400 1900 2    50   Input ~ 0
+SW1
+$Comp
+L Device:R R6
+U 1 1 5FBF1200
+P 6250 1750
+F 0 "R6" V 6043 1750 50  0000 C CNN
+F 1 "R" V 6134 1750 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 6180 1750 50  0001 C CNN
+F 3 "~" H 6250 1750 50  0001 C CNN
+	1    6250 1750
+	-1   0    0    1   
+$EndComp
+Text GLabel 8600 1750 0    50   Input ~ 0
+SW3
+Text GLabel 8600 1850 0    50   Input ~ 0
+SW2
+Text GLabel 8600 1950 0    50   Input ~ 0
+SW1
+Text GLabel 6200 2000 2    50   Input ~ 0
+SW2
+$Comp
+L Device:R R5
+U 1 1 5FBF120A
+P 6050 1850
+F 0 "R5" V 5843 1850 50  0000 C CNN
+F 1 "R" V 5934 1850 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 5980 1850 50  0001 C CNN
+F 3 "~" H 6050 1850 50  0001 C CNN
+	1    6050 1850
+	-1   0    0    1   
+$EndComp
+Text GLabel 6000 2100 2    50   Input ~ 0
+SW3
+$Comp
+L Device:R R4
+U 1 1 5FBF1211
+P 5850 1950
+F 0 "R4" V 5643 1950 50  0000 C CNN
+F 1 "R" V 5734 1950 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 5780 1950 50  0001 C CNN
+F 3 "~" H 5850 1950 50  0001 C CNN
+	1    5850 1950
+	-1   0    0    1   
+$EndComp
+Text GLabel 5800 2200 2    50   Input ~ 0
+SW4
+$Comp
+L Device:R R3
+U 1 1 5FBF1218
+P 5650 2350
+F 0 "R3" V 5443 2350 50  0000 C CNN
+F 1 "R" H 5534 2350 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 5580 2350 50  0001 C CNN
+F 3 "~" H 5650 2350 50  0001 C CNN
+	1    5650 2350
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6400 1900 6250 1900
+Wire Wire Line
+	6200 2000 6050 2000
+Wire Wire Line
+	6050 2000 5300 2000
+Connection ~ 6050 2000
+Wire Wire Line
+	6000 2100 5850 2100
+Wire Wire Line
+	5850 2100 5300 2100
+Connection ~ 5850 2100
+Connection ~ 6250 1900
+Wire Wire Line
+	5300 2200 5650 2200
+Connection ~ 5650 2200
+Wire Wire Line
+	5650 2200 5800 2200
+Wire Wire Line
+	5300 1900 6250 1900
+$Comp
+L power:GND #PWR0121
+U 1 1 5FBF122A
+P 4300 2200
+F 0 "#PWR0121" H 4300 1950 50  0001 C CNN
+F 1 "GND" H 4305 2027 50  0000 C CNN
+F 2 "" H 4300 2200 50  0001 C CNN
+F 3 "" H 4300 2200 50  0001 C CNN
+	1    4300 2200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4300 2200 4600 2200
+Wire Wire Line
+	4600 2200 4600 2100
+Wire Wire Line
+	4600 1900 4700 1900
+Connection ~ 4600 2200
+Wire Wire Line
+	4600 2200 4700 2200
+Wire Wire Line
+	4700 2000 4600 2000
+Connection ~ 4600 2000
+Wire Wire Line
+	4600 2000 4600 1900
+Wire Wire Line
+	4700 2100 4600 2100
+Connection ~ 4600 2100
+Wire Wire Line
+	4600 2100 4600 2000
+$Comp
+L power:+5V #PWR0122
+U 1 1 5FBF123B
+P 7950 2350
+F 0 "#PWR0122" H 7950 2200 50  0001 C CNN
+F 1 "+5V" H 7965 2523 50  0000 C CNN
+F 2 "" H 7950 2350 50  0001 C CNN
+F 3 "" H 7950 2350 50  0001 C CNN
+	1    7950 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR0123
+U 1 1 5FBF1241
+P 5850 1250
+F 0 "#PWR0123" H 5850 1100 50  0001 C CNN
+F 1 "+3.3V" H 5865 1423 50  0000 C CNN
+F 2 "" H 5850 1250 50  0001 C CNN
+F 3 "" H 5850 1250 50  0001 C CNN
+	1    5850 1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR0124
+U 1 1 5FBF1247
+P 6050 1400
+F 0 "#PWR0124" H 6050 1250 50  0001 C CNN
+F 1 "+3.3V" H 6065 1573 50  0000 C CNN
+F 2 "" H 6050 1400 50  0001 C CNN
+F 3 "" H 6050 1400 50  0001 C CNN
+	1    6050 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR0125
+U 1 1 5FBF124D
+P 6250 1500
+F 0 "#PWR0125" H 6250 1350 50  0001 C CNN
+F 1 "+3.3V" H 6265 1673 50  0000 C CNN
+F 2 "" H 6250 1500 50  0001 C CNN
+F 3 "" H 6250 1500 50  0001 C CNN
+	1    6250 1500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6250 1500 6250 1600
+Wire Wire Line
+	6050 1400 6050 1700
+Wire Wire Line
+	5850 1250 5850 1800
+$Comp
+L power:+3.3V #PWR0126
+U 1 1 5FBF1256
+P 5650 2750
+F 0 "#PWR0126" H 5650 2600 50  0001 C CNN
+F 1 "+3.3V" H 5665 2923 50  0000 C CNN
+F 2 "" H 5650 2750 50  0001 C CNN
+F 3 "" H 5650 2750 50  0001 C CNN
+	1    5650 2750
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5650 2750 5650 2500
+Text GLabel 8600 1550 0    50   Input ~ 0
+LDD_1200-DIM
+Text GLabel 8600 1450 0    50   Input ~ 0
+LDH_45B-DIM
+Text GLabel 9800 1950 2    50   Input ~ 0
+FEEDBACK-LED1
+Text GLabel 14200 1050 0    50   Input ~ 0
+FEEDBACK-LED1
+$Comp
+L power:GND #PWR0127
+U 1 1 5FBF1261
+P 15550 1050
+F 0 "#PWR0127" H 15550 800 50  0001 C CNN
+F 1 "GND" H 15555 877 50  0000 C CNN
+F 2 "" H 15550 1050 50  0001 C CNN
+F 3 "" H 15550 1050 50  0001 C CNN
+	1    15550 1050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R14
+U 1 1 5FBF1267
+P 14500 1050
+F 0 "R14" V 14293 1050 50  0000 C CNN
+F 1 "10k" V 14384 1050 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 14430 1050 50  0001 C CNN
+F 3 "~" H 14500 1050 50  0001 C CNN
+	1    14500 1050
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	14200 1050 14350 1050
+Wire Wire Line
+	14650 1050 14850 1050
+Wire Wire Line
+	15150 1050 15550 1050
+Text GLabel 9800 1850 2    50   Input ~ 0
+BUTTON1
+Text GLabel 9800 1750 2    50   Input ~ 0
+BUTTON2
+Text GLabel 9800 2050 2    50   Input ~ 0
+FEEDBACK-LED2
+$Comp
+L Device:LED D4
+U 1 1 5FBF1273
+P 15000 1400
+F 0 "D4" H 14993 1145 50  0000 C CNN
+F 1 "LED" H 14993 1236 50  0000 C CNN
+F 2 "LED_THT:LED_D3.0mm_Horizontal_O1.27mm_Z2.0mm" H 15000 1400 50  0001 C CNN
+F 3 "~" H 15000 1400 50  0001 C CNN
+	1    15000 1400
+	-1   0    0    1   
+$EndComp
+Text GLabel 14200 1400 0    50   Input ~ 0
+FEEDBACK-LED2
+$Comp
+L power:GND #PWR0128
+U 1 1 5FBF127A
+P 15550 1400
+F 0 "#PWR0128" H 15550 1150 50  0001 C CNN
+F 1 "GND" H 15555 1227 50  0000 C CNN
+F 2 "" H 15550 1400 50  0001 C CNN
+F 3 "" H 15550 1400 50  0001 C CNN
+	1    15550 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R15
+U 1 1 5FBF1280
+P 14500 1400
+F 0 "R15" V 14293 1400 50  0000 C CNN
+F 1 "10k" V 14384 1400 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 14430 1400 50  0001 C CNN
+F 3 "~" H 14500 1400 50  0001 C CNN
+	1    14500 1400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	14200 1400 14350 1400
+Wire Wire Line
+	14650 1400 14850 1400
+Wire Wire Line
+	15150 1400 15550 1400
+$Comp
+L Device:R R11
+U 1 1 5FBF1289
+P 9600 3350
+F 0 "R11" V 9393 3350 50  0000 C CNN
+F 1 "10K" H 9484 3350 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 9530 3350 50  0001 C CNN
+F 3 "~" H 9600 3350 50  0001 C CNN
+	1    9600 3350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9600 3500 9600 3550
+Wire Wire Line
+	9600 3200 9600 3100
+Text GLabel 9350 3550 0    50   Input ~ 0
+BUTTON1
+Wire Wire Line
+	9350 3550 9600 3550
+Connection ~ 9600 3550
+$Comp
+L power:GND #PWR0129
+U 1 1 5FBF1294
+P 10850 3550
+F 0 "#PWR0129" H 10850 3300 50  0001 C CNN
+F 1 "GND" H 10855 3377 50  0000 C CNN
+F 2 "" H 10850 3550 50  0001 C CNN
+F 3 "" H 10850 3550 50  0001 C CNN
+	1    10850 3550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10500 3550 10850 3550
+Text GLabel 9350 4350 0    50   Input ~ 0
+BUTTON2
+$Comp
+L power:GND #PWR0130
+U 1 1 5FBF129C
+P 8200 2250
+F 0 "#PWR0130" H 8200 2000 50  0001 C CNN
+F 1 "GND" H 8205 2077 50  0000 C CNN
+F 2 "" H 8200 2250 50  0001 C CNN
+F 3 "" H 8200 2250 50  0001 C CNN
+	1    8200 2250
+	-1   0    0    1   
+$EndComp
+$Comp
+L ariadne-rescue:01x15_2.50mm_HEADER_PIN-ariadne U55
+U 1 1 5FBF12A2
+P 7550 1700
+F 0 "U55" H 7592 2715 50  0000 C CNN
+F 1 "01x15_2.50mm_HEADER_PIN" H 7592 2624 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x15_P2.54mm_Vertical" H 7550 1700 50  0001 C CNN
+F 3 "" H 7550 1700 50  0001 C CNN
+	1    7550 1700
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	7650 950  8600 950 
+Wire Wire Line
+	8600 1050 7650 1050
+Wire Wire Line
+	7650 1150 8600 1150
+Wire Wire Line
+	8600 1250 7650 1250
+Wire Wire Line
+	8600 1350 7650 1350
+Wire Wire Line
+	8600 1450 7650 1450
+Wire Wire Line
+	7650 1550 8600 1550
+Wire Wire Line
+	8600 1650 7650 1650
+Wire Wire Line
+	7650 1750 8600 1750
+Wire Wire Line
+	8600 1850 7650 1850
+Wire Wire Line
+	7650 1950 8600 1950
+Wire Wire Line
+	8600 2050 7650 2050
+Wire Wire Line
+	7650 2150 8600 2150
+Wire Wire Line
+	7650 2250 8200 2250
+Connection ~ 8200 2250
+Wire Wire Line
+	8200 2250 8600 2250
+Wire Wire Line
+	7650 2350 7950 2350
+Connection ~ 7950 2350
+Wire Wire Line
+	7950 2350 8600 2350
+$Comp
+L ariadne-rescue:01x15_2.50mm_HEADER_PIN-ariadne U61
+U 1 1 5FBF12BB
+P 10900 1700
+F 0 "U61" H 11128 1796 50  0000 L CNN
+F 1 "01x15_2.50mm_HEADER_PIN" H 11128 1705 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x15_P2.54mm_Vertical" H 10900 1700 50  0001 C CNN
+F 3 "" H 10900 1700 50  0001 C CNN
+	1    10900 1700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10800 950  9800 950 
+Wire Wire Line
+	9800 1050 10800 1050
+Wire Wire Line
+	10800 1150 9800 1150
+Wire Wire Line
+	9800 1250 10800 1250
+Wire Wire Line
+	10800 1350 9800 1350
+Wire Wire Line
+	9800 1450 10800 1450
+Wire Wire Line
+	10800 1550 9800 1550
+Wire Wire Line
+	9800 1650 10800 1650
+Wire Wire Line
+	10800 1750 9800 1750
+Wire Wire Line
+	9800 1850 10800 1850
+Wire Wire Line
+	10800 1950 9800 1950
+Wire Wire Line
+	9800 2050 10800 2050
+Wire Wire Line
+	10800 2150 9800 2150
+Wire Wire Line
+	9800 2250 10800 2250
+Wire Wire Line
+	10800 2350 9800 2350
+$Comp
+L power:GND #PWR0131
+U 1 1 5FBF12D0
+P 12650 8050
+F 0 "#PWR0131" H 12650 7800 50  0001 C CNN
+F 1 "GND" H 12655 7877 50  0000 C CNN
+F 2 "" H 12650 8050 50  0001 C CNN
+F 3 "" H 12650 8050 50  0001 C CNN
+	1    12650 8050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+12V #PWR0132
+U 1 1 5FBF12D6
+P 13200 8050
+F 0 "#PWR0132" H 13200 7900 50  0001 C CNN
+F 1 "+12V" H 13215 8223 50  0000 C CNN
+F 2 "" H 13200 8050 50  0001 C CNN
+F 3 "" H 13200 8050 50  0001 C CNN
+	1    13200 8050
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+5V #PWR0133
+U 1 1 5FBF12DC
+P 13750 8050
+F 0 "#PWR0133" H 13750 7900 50  0001 C CNN
+F 1 "+5V" H 13765 8223 50  0000 C CNN
+F 2 "" H 13750 8050 50  0001 C CNN
+F 3 "" H 13750 8050 50  0001 C CNN
+	1    13750 8050
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+3.3V #PWR0134
+U 1 1 5FBF12E2
+P 14350 8050
+F 0 "#PWR0134" H 14350 7900 50  0001 C CNN
+F 1 "+3.3V" H 14365 8223 50  0000 C CNN
+F 2 "" H 14350 8050 50  0001 C CNN
+F 3 "" H 14350 8050 50  0001 C CNN
+	1    14350 8050
+	-1   0    0    1   
+$EndComp
+$Comp
+L ariadne-rescue:GB215AP-ariadne SW1
+U 1 1 5FBF12E8
+P 10250 3550
+F 0 "SW1" H 10250 3742 40  0000 C CNN
+F 1 "GB215AP" H 10250 3666 40  0000 C CNN
+F 2 "ariadne:GB215AP" H 10150 3350 60  0001 C CNN
+F 3 "" H 10250 3550 60  0000 C CNN
+	1    10250 3550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9600 3550 10000 3550
+$Comp
+L Device:R R12
+U 1 1 5FBF12EF
+P 9600 4150
+F 0 "R12" V 9393 4150 50  0000 C CNN
+F 1 "10K" H 9484 4150 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 9530 4150 50  0001 C CNN
+F 3 "~" H 9600 4150 50  0001 C CNN
+	1    9600 4150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9600 4300 9600 4350
+Wire Wire Line
+	9600 4000 9600 3900
+Wire Wire Line
+	9350 4350 9600 4350
+Connection ~ 9600 4350
+$Comp
+L power:GND #PWR0135
+U 1 1 5FBF12F9
+P 10850 4350
+F 0 "#PWR0135" H 10850 4100 50  0001 C CNN
+F 1 "GND" H 10855 4177 50  0000 C CNN
+F 2 "" H 10850 4350 50  0001 C CNN
+F 3 "" H 10850 4350 50  0001 C CNN
+	1    10850 4350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10500 4350 10850 4350
+$Comp
+L ariadne-rescue:GB215AP-ariadne SW2
+U 1 1 5FBF1300
+P 10250 4350
+F 0 "SW2" H 10250 4542 40  0000 C CNN
+F 1 "GB215AP" H 10250 4466 40  0000 C CNN
+F 2 "ariadne:GB215AP" H 10150 4150 60  0001 C CNN
+F 3 "" H 10250 4350 60  0000 C CNN
+	1    10250 4350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9600 4350 10000 4350
+$Comp
+L ariadne-rescue:Noctua-NF-A4x10-Fan-ariadne U58
+U 1 1 5FBF1307
+P 8450 8450
+F 0 "U58" H 8828 8496 50  0000 L CNN
+F 1 "Noctua-NF-A4x10-Fan" H 8000 8000 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 7600 8800 50  0001 C CNN
+F 3 "" H 7600 8800 50  0001 C CNN
+	1    8450 8450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+12V #PWR0136
+U 1 1 5FBF130D
+P 8350 7950
+F 0 "#PWR0136" H 8350 7800 50  0001 C CNN
+F 1 "+12V" H 8365 8123 50  0000 C CNN
+F 2 "" H 8350 7950 50  0001 C CNN
+F 3 "" H 8350 7950 50  0001 C CNN
+	1    8350 7950
+	1    0    0    -1  
+$EndComp
+Text GLabel 8600 1250 0    50   Input ~ 0
+FAN-PWM
+Text GLabel 8500 5700 1    50   Input ~ 0
+FAN-PWM
+$Comp
+L power:GND #PWR0137
+U 1 1 5FBF1315
+P 10000 7350
+F 0 "#PWR0137" H 10000 7100 50  0001 C CNN
+F 1 "GND" H 10005 7177 50  0000 C CNN
+F 2 "" H 10000 7350 50  0001 C CNN
+F 3 "" H 10000 7350 50  0001 C CNN
+	1    10000 7350
+	1    0    0    -1  
+$EndComp
+Text GLabel 8600 1350 0    50   Input ~ 0
+NILS-PWM+
+Wire Wire Line
+	1950 3550 1950 3800
+Text GLabel 1550 1450 3    50   Input ~ 0
+POWER-IN+
+Text GLabel 1350 1450 3    50   Input ~ 0
+POWER-IN-
+Connection ~ 1250 3450
+Wire Wire Line
+	1250 3450 1250 2850
+$Comp
+L power:+24V #PWR0138
+U 1 1 5FBF1321
+P 1950 3800
+F 0 "#PWR0138" H 1950 3650 50  0001 C CNN
+F 1 "+24V" V 1965 3928 50  0000 L CNN
+F 2 "" H 1950 3800 50  0001 C CNN
+F 3 "" H 1950 3800 50  0001 C CNN
+	1    1950 3800
+	0    -1   -1   0   
+$EndComp
+Connection ~ 1950 3550
+Text Notes 1950 1500 0    50   ~ 0
+Correct polarity protection\n
+$Comp
+L Device:C Murata-Ceramic-Capacitor-50v1-22uF5
+U 1 1 5FBF1329
+P 1800 5200
+F 0 "Murata-Ceramic-Capacitor-50v1-22uF5" H 850 4900 50  0000 L CNN
+F 1 "C" H 1915 5155 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm" H 1838 5050 50  0001 C CNN
+F 3 "~" H 1800 5200 50  0001 C CNN
+	1    1800 5200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2150 5050 1800 5050
+Wire Wire Line
+	1500 5050 1800 5050
+Connection ~ 1800 5050
+$Comp
+L power:GND #PWR0139
+U 1 1 5FBF1332
+P 2450 5700
+F 0 "#PWR0139" H 2450 5450 50  0001 C CNN
+F 1 "GND" H 2455 5527 50  0000 C CNN
+F 2 "" H 2450 5700 50  0001 C CNN
+F 3 "" H 2450 5700 50  0001 C CNN
+	1    2450 5700
+	1    0    0    -1  
+$EndComp
+$Comp
+L ariadne-rescue:OKI-78SR-12v-OpenSourceCelluloid-upuaut-rescue U48
+U 1 1 5FBF1338
+P 2450 5100
+F 0 "U48" H 2450 5415 50  0000 C CNN
+F 1 "OKI-78SR-12v" H 2450 5324 50  0000 C CNN
+F 2 "Converter_DCDC:Converter_DCDC_muRata_OKI-78SR_Vertical" H 2450 5050 50  0001 C CNN
+F 3 "" H 2450 5000 50  0001 C CNN
+	1    2450 5100
+	1    0    0    -1  
+$EndComp
+Text Notes 650  4600 0    50   ~ 0
+12V voltage regulator\n
+Text Notes 650  6550 0    50   ~ 0
+5V voltage regulator\n\n
+$Comp
+L power:GND #PWR0140
+U 1 1 5FBF1340
+P 1800 5700
+F 0 "#PWR0140" H 1800 5450 50  0001 C CNN
+F 1 "GND" H 1805 5527 50  0000 C CNN
+F 2 "" H 1800 5700 50  0001 C CNN
+F 3 "" H 1800 5700 50  0001 C CNN
+	1    1800 5700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1800 5350 1800 5700
+Wire Wire Line
+	2450 5450 2450 5700
+$Comp
+L power:GND #PWR0141
+U 1 1 5FBF1348
+P 2950 5700
+F 0 "#PWR0141" H 2950 5450 50  0001 C CNN
+F 1 "GND" H 2955 5527 50  0000 C CNN
+F 2 "" H 2950 5700 50  0001 C CNN
+F 3 "" H 2950 5700 50  0001 C CNN
+	1    2950 5700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2950 5700 2950 5350
+$Comp
+L Device:C Murata-Ceramic-Capacitor-50v1-22uF6
+U 1 1 5FBF134F
+P 1800 7100
+F 0 "Murata-Ceramic-Capacitor-50v1-22uF6" H 800 6800 50  0000 L CNN
+F 1 "C" H 1915 7055 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm" H 1838 6950 50  0001 C CNN
+F 3 "~" H 1800 7100 50  0001 C CNN
+	1    1800 7100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2150 6950 1800 6950
+Wire Wire Line
+	1500 6950 1800 6950
+Connection ~ 1800 6950
+$Comp
+L power:GND #PWR0142
+U 1 1 5FBF1358
+P 2450 7600
+F 0 "#PWR0142" H 2450 7350 50  0001 C CNN
+F 1 "GND" H 2455 7427 50  0000 C CNN
+F 2 "" H 2450 7600 50  0001 C CNN
+F 3 "" H 2450 7600 50  0001 C CNN
+	1    2450 7600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0143
+U 1 1 5FBF135E
+P 1800 7600
+F 0 "#PWR0143" H 1800 7350 50  0001 C CNN
+F 1 "GND" H 1805 7427 50  0000 C CNN
+F 2 "" H 1800 7600 50  0001 C CNN
+F 3 "" H 1800 7600 50  0001 C CNN
+	1    1800 7600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1800 7250 1800 7600
+Wire Wire Line
+	2450 7350 2450 7600
+$Comp
+L power:GND #PWR0144
+U 1 1 5FBF1366
+P 2950 7600
+F 0 "#PWR0144" H 2950 7350 50  0001 C CNN
+F 1 "GND" H 2955 7427 50  0000 C CNN
+F 2 "" H 2950 7600 50  0001 C CNN
+F 3 "" H 2950 7600 50  0001 C CNN
+	1    2950 7600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2950 7600 2950 7250
+Wire Notes Line
+	650  4700 650  6050
+Wire Notes Line
+	650  6050 3550 6050
+Wire Notes Line
+	3550 6050 3550 4700
+Wire Notes Line
+	3550 4700 650  4700
+$Comp
+L power:+24V #PWR0145
+U 1 1 5FBF1371
+P 1500 6950
+F 0 "#PWR0145" H 1500 6800 50  0001 C CNN
+F 1 "+24V" H 1515 7123 50  0000 C CNN
+F 2 "" H 1500 6950 50  0001 C CNN
+F 3 "" H 1500 6950 50  0001 C CNN
+	1    1500 6950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+24V #PWR0146
+U 1 1 5FBF1377
+P 1500 5050
+F 0 "#PWR0146" H 1500 4900 50  0001 C CNN
+F 1 "+24V" H 1515 5223 50  0000 C CNN
+F 2 "" H 1500 5050 50  0001 C CNN
+F 3 "" H 1500 5050 50  0001 C CNN
+	1    1500 5050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+12V #PWR0147
+U 1 1 5FBF137D
+P 3150 5050
+F 0 "#PWR0147" H 3150 4900 50  0001 C CNN
+F 1 "+12V" H 3165 5223 50  0000 C CNN
+F 2 "" H 3150 5050 50  0001 C CNN
+F 3 "" H 3150 5050 50  0001 C CNN
+	1    3150 5050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0148
+U 1 1 5FBF1383
+P 3150 6950
+F 0 "#PWR0148" H 3150 6800 50  0001 C CNN
+F 1 "+5V" H 3165 7123 50  0000 C CNN
+F 2 "" H 3150 6950 50  0001 C CNN
+F 3 "" H 3150 6950 50  0001 C CNN
+	1    3150 6950
+	1    0    0    -1  
+$EndComp
+$Comp
+L ariadne-rescue:OKI-78SR-5v-OpenSourceCelluloid-upuaut-rescue U49
+U 1 1 5FBF1389
+P 2450 7000
+F 0 "U49" H 2450 7315 50  0000 C CNN
+F 1 "OKI-78SR-5v" H 2450 7224 50  0000 C CNN
+F 2 "Converter_DCDC:Converter_DCDC_muRata_OKI-78SR_Vertical" H 2450 6950 50  0001 C CNN
+F 3 "" H 2450 6900 50  0001 C CNN
+	1    2450 7000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2750 5050 2950 5050
+$Comp
+L Device:C Murata-Ceramic-Capacitor-50v1-22uF7
+U 1 1 5FBF1390
+P 2950 5200
+F 0 "Murata-Ceramic-Capacitor-50v1-22uF7" H 3000 4900 50  0000 L CNN
+F 1 "C" H 3065 5155 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm" H 2988 5050 50  0001 C CNN
+F 3 "~" H 2950 5200 50  0001 C CNN
+	1    2950 5200
+	1    0    0    -1  
+$EndComp
+Connection ~ 2950 5050
+Wire Wire Line
+	2950 5050 3150 5050
+$Comp
+L power:PWR_FLAG #FLG0108
+U 1 1 5FBF1398
+P 3150 5050
+F 0 "#FLG0108" H 3150 5125 50  0001 C CNN
+F 1 "PWR_FLAG" H 3150 5223 50  0000 C CNN
+F 2 "" H 3150 5050 50  0001 C CNN
+F 3 "~" H 3150 5050 50  0001 C CNN
+	1    3150 5050
+	0    1    1    0   
+$EndComp
+Connection ~ 3150 5050
+Wire Wire Line
+	2750 6950 2950 6950
+$Comp
+L Device:C Murata-Ceramic-Capacitor-50v1-22uF8
+U 1 1 5FBF13A0
+P 2950 7100
+F 0 "Murata-Ceramic-Capacitor-50v1-22uF8" H 3100 6800 50  0000 L CNN
+F 1 "C" H 3065 7055 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm" H 2988 6950 50  0001 C CNN
+F 3 "~" H 2950 7100 50  0001 C CNN
+	1    2950 7100
+	1    0    0    -1  
+$EndComp
+Connection ~ 2950 6950
+Wire Wire Line
+	2950 6950 3150 6950
+Wire Notes Line
+	650  6500 4700 6500
+Wire Notes Line
+	650  6500 650  7900
+Wire Notes Line
+	4700 6500 4700 7900
+Wire Notes Line
+	650  7900 4700 7900
+Text Notes 4050 3450 0    50   ~ 0
+3.3V voltage regulator\n\n
+$Comp
+L Device:C Murata-Ceramic-Capacitor-50v1-22uF9
+U 1 1 5FBF13AD
+P 5200 4000
+F 0 "Murata-Ceramic-Capacitor-50v1-22uF9" H 4200 3700 50  0000 L CNN
+F 1 "C" H 5315 3955 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm" H 5238 3850 50  0001 C CNN
+F 3 "~" H 5200 4000 50  0001 C CNN
+	1    5200 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5550 3850 5200 3850
+Wire Wire Line
+	4900 3850 5200 3850
+Connection ~ 5200 3850
+$Comp
+L power:GND #PWR0149
+U 1 1 5FBF13B6
+P 5850 4500
+F 0 "#PWR0149" H 5850 4250 50  0001 C CNN
+F 1 "GND" H 5855 4327 50  0000 C CNN
+F 2 "" H 5850 4500 50  0001 C CNN
+F 3 "" H 5850 4500 50  0001 C CNN
+	1    5850 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0150
+U 1 1 5FBF13BC
+P 5200 4500
+F 0 "#PWR0150" H 5200 4250 50  0001 C CNN
+F 1 "GND" H 5205 4327 50  0000 C CNN
+F 2 "" H 5200 4500 50  0001 C CNN
+F 3 "" H 5200 4500 50  0001 C CNN
+	1    5200 4500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5200 4150 5200 4500
+Wire Wire Line
+	5850 4250 5850 4500
+$Comp
+L power:GND #PWR0151
+U 1 1 5FBF13C4
+P 6350 4500
+F 0 "#PWR0151" H 6350 4250 50  0001 C CNN
+F 1 "GND" H 6355 4327 50  0000 C CNN
+F 2 "" H 6350 4500 50  0001 C CNN
+F 3 "" H 6350 4500 50  0001 C CNN
+	1    6350 4500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6350 4500 6350 4150
+$Comp
+L power:+24V #PWR0152
+U 1 1 5FBF13CB
+P 4900 3850
+F 0 "#PWR0152" H 4900 3700 50  0001 C CNN
+F 1 "+24V" H 4915 4023 50  0000 C CNN
+F 2 "" H 4900 3850 50  0001 C CNN
+F 3 "" H 4900 3850 50  0001 C CNN
+	1    4900 3850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6150 3850 6350 3850
+$Comp
+L Device:C Murata-Ceramic-Capacitor-50v1-22uF10
+U 1 1 5FBF13D2
+P 6350 4000
+F 0 "Murata-Ceramic-Capacitor-50v1-22uF10" H 6500 3700 50  0000 L CNN
+F 1 "C" H 6465 3955 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm" H 6388 3850 50  0001 C CNN
+F 3 "~" H 6350 4000 50  0001 C CNN
+	1    6350 4000
+	1    0    0    -1  
+$EndComp
+Connection ~ 6350 3850
+Wire Wire Line
+	6350 3850 6550 3850
+Wire Notes Line
+	4050 3400 8100 3400
+Wire Notes Line
+	4050 3400 4050 4800
+Wire Notes Line
+	8100 3400 8100 4800
+Wire Notes Line
+	4050 4800 8100 4800
+Wire Notes Line
+	450  700  450  4300
+Wire Notes Line
+	450  4300 3300 4300
+Wire Notes Line
+	3300 4300 3300 700 
+Wire Notes Line
+	3300 700  450  700 
+$Comp
+L ariadne-rescue:Connector-LED-ariadne U47
+U 1 1 5FBF13E2
+P 2300 9650
+F 0 "U47" H 2350 9815 50  0000 C CNN
+F 1 "Connector-LED" H 2350 9724 50  0000 C CNN
+F 2 "Connector_JST:JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical" H 2350 9633 50  0000 C CNN
+F 3 "" H 2300 9650 50  0001 C CNN
+	1    2300 9650
+	1    0    0    -1  
+$EndComp
+Text GLabel 2150 9800 0    50   Input ~ 0
+45B_OUT+
+Text GLabel 2550 9800 2    50   Input ~ 0
+45B_OUT-
+$Comp
+L power:+3.3V #PWR0153
+U 1 1 5FBF13EA
+P 6550 3850
+F 0 "#PWR0153" H 6550 3700 50  0001 C CNN
+F 1 "+3.3V" H 6565 4023 50  0000 C CNN
+F 2 "" H 6550 3850 50  0001 C CNN
+F 3 "" H 6550 3850 50  0001 C CNN
+	1    6550 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG0109
+U 1 1 5FBF13F0
+P 3150 6950
+F 0 "#FLG0109" H 3150 7025 50  0001 C CNN
+F 1 "PWR_FLAG" H 3150 7123 50  0000 C CNN
+F 2 "" H 3150 6950 50  0001 C CNN
+F 3 "~" H 3150 6950 50  0001 C CNN
+	1    3150 6950
+	0    1    1    0   
+$EndComp
+Connection ~ 3150 6950
+$Comp
+L power:PWR_FLAG #FLG0110
+U 1 1 5FBF13F7
+P 6550 3850
+F 0 "#FLG0110" H 6550 3925 50  0001 C CNN
+F 1 "PWR_FLAG" H 6550 4023 50  0000 C CNN
+F 2 "" H 6550 3850 50  0001 C CNN
+F 3 "~" H 6550 3850 50  0001 C CNN
+	1    6550 3850
+	0    1    1    0   
+$EndComp
+Connection ~ 6550 3850
+$Comp
+L power:+3.3V #PWR0154
+U 1 1 5FBF13FE
+P 9600 3100
+F 0 "#PWR0154" H 9600 2950 50  0001 C CNN
+F 1 "+3.3V" H 9615 3273 50  0000 C CNN
+F 2 "" H 9600 3100 50  0001 C CNN
+F 3 "" H 9600 3100 50  0001 C CNN
+	1    9600 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR0155
+U 1 1 5FBF1404
+P 9600 3900
+F 0 "#PWR0155" H 9600 3750 50  0001 C CNN
+F 1 "+3.3V" H 9615 4073 50  0000 C CNN
+F 2 "" H 9600 3900 50  0001 C CNN
+F 3 "" H 9600 3900 50  0001 C CNN
+	1    9600 3900
+	1    0    0    -1  
+$EndComp
+Text GLabel 10000 8300 2    50   Input ~ 0
+FAN-TACH
+Wire Wire Line
+	8350 7950 8350 8150
+Wire Wire Line
+	8550 7850 8550 8150
+$Comp
+L Device:R R8
+U 1 1 5FBF140D
+P 9050 6450
+F 0 "R8" V 8843 6450 50  0000 C CNN
+F 1 "R" V 8934 6450 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 8980 6450 50  0001 C CNN
+F 3 "~" H 9050 6450 50  0001 C CNN
+	1    9050 6450
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+3.3V #PWR0156
+U 1 1 5FBF1413
+P 9700 6450
+F 0 "#PWR0156" H 9700 6300 50  0001 C CNN
+F 1 "+3.3V" H 9715 6623 50  0000 C CNN
+F 2 "" H 9700 6450 50  0001 C CNN
+F 3 "" H 9700 6450 50  0001 C CNN
+	1    9700 6450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_BJT:MMBT3904 Q3
+U 1 1 5FBF1419
+P 8500 6350
+F 0 "Q3" V 8735 6350 50  0000 C CNN
+F 1 "MMBT3904" V 8826 6350 50  0000 C CNN
+F 2 "Package_TO_SOT_THT:TO-92" H 8700 6275 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N3904.pdf" H 8500 6350 50  0001 L CNN
+	1    8500 6350
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0157
+U 1 1 5FBF141F
+P 7950 6450
+F 0 "#PWR0157" H 7950 6200 50  0001 C CNN
+F 1 "GND" H 7955 6277 50  0000 C CNN
+F 2 "" H 7950 6450 50  0001 C CNN
+F 3 "" H 7950 6450 50  0001 C CNN
+	1    7950 6450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8500 5700 8500 5800
+Wire Wire Line
+	9700 6450 9200 6450
+Wire Wire Line
+	8900 6450 8750 6450
+$Comp
+L Device:R R7
+U 1 1 5FBF1428
+P 8500 5950
+F 0 "R7" H 8430 5904 50  0000 R CNN
+F 1 "R" H 8430 5995 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 8430 5950 50  0001 C CNN
+F 3 "~" H 8500 5950 50  0001 C CNN
+	1    8500 5950
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	8500 6100 8500 6150
+Wire Wire Line
+	8750 6450 8750 8150
+Connection ~ 8750 6450
+Wire Wire Line
+	8750 6450 8700 6450
+$Comp
+L power:+12V #PWR0158
+U 1 1 5FBF1432
+P 10600 7650
+F 0 "#PWR0158" H 10600 7500 50  0001 C CNN
+F 1 "+12V" H 10615 7823 50  0000 C CNN
+F 2 "" H 10600 7650 50  0001 C CNN
+F 3 "" H 10600 7650 50  0001 C CNN
+	1    10600 7650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8550 7850 9200 7850
+$Comp
+L Device:R R13
+U 1 1 5FBF1439
+P 9600 7850
+F 0 "R13" V 9450 7850 50  0000 C CNN
+F 1 "R" V 9716 7850 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 9530 7850 50  0001 C CNN
+F 3 "~" H 9600 7850 50  0001 C CNN
+	1    9600 7850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R9
+U 1 1 5FBF143F
+P 9200 8000
+F 0 "R9" H 9130 7954 50  0000 R CNN
+F 1 "R" H 9130 8045 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 9130 8000 50  0001 C CNN
+F 3 "~" H 9200 8000 50  0001 C CNN
+	1    9200 8000
+	-1   0    0    1   
+$EndComp
+Connection ~ 9200 7850
+Wire Wire Line
+	9200 7850 9450 7850
+$Comp
+L Device:R R10
+U 1 1 5FBF1447
+P 9200 8600
+F 0 "R10" H 9130 8554 50  0000 R CNN
+F 1 "R" H 9130 8645 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 9130 8600 50  0001 C CNN
+F 3 "~" H 9200 8600 50  0001 C CNN
+	1    9200 8600
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR0159
+U 1 1 5FBF144D
+P 9200 9000
+F 0 "#PWR0159" H 9200 8750 50  0001 C CNN
+F 1 "GND" H 9205 8827 50  0000 C CNN
+F 2 "" H 9200 9000 50  0001 C CNN
+F 3 "" H 9200 9000 50  0001 C CNN
+	1    9200 9000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9200 8450 9200 8300
+Wire Wire Line
+	9200 8750 9200 9000
+Wire Wire Line
+	10000 8300 9200 8300
+Connection ~ 9200 8300
+Wire Wire Line
+	9200 8300 9200 8150
+Wire Wire Line
+	7950 6450 8300 6450
+Wire Wire Line
+	8150 8150 8150 7350
+$Comp
+L Device:CP1_Small C1
+U 1 1 5FBF145A
+P 9300 7500
+F 0 "C1" H 9209 7454 50  0000 R CNN
+F 1 "CP1_Small" H 9209 7545 50  0000 R CNN
+F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm" H 9300 7500 50  0001 C CNN
+F 3 "~" H 9300 7500 50  0001 C CNN
+	1    9300 7500
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	9750 7850 10400 7850
+Wire Wire Line
+	10600 7650 10400 7650
+Wire Wire Line
+	10400 7650 10400 7850
+Connection ~ 10400 7650
+Wire Wire Line
+	8150 7350 9300 7350
+Wire Wire Line
+	9300 7650 9300 7600
+Wire Wire Line
+	9300 7650 10400 7650
+Wire Wire Line
+	9300 7400 9300 7350
+Connection ~ 9300 7350
+Wire Wire Line
+	9300 7350 10000 7350
+$Comp
+L ariadne-rescue:LDH-45B-1050-connector-ariadne U43
+U 1 1 5FBF146A
+P 2100 8500
+F 0 "U43" H 2828 8246 50  0000 L CNN
+F 1 "LDH-45B-1050-connector-master" H 1750 7700 50  0000 L CNN
+F 2 "Connector_Molex:Molex_Micro-Fit_3.0_43650-0500_1x05_P3.00mm_Horizontal" H 2100 8500 50  0001 C CNN
+F 3 "" H 2100 8500 50  0001 C CNN
+	1    2100 8500
+	1    0    0    -1  
+$EndComp
+$Comp
+L ariadne-rescue:LDH-45B-1050-connector-ariadne U41
+U 1 1 5FBF1470
+P 1800 10350
+F 0 "U41" H 2042 10515 50  0000 C CNN
+F 1 "LDH-45B-1050-connector-slave" H 2042 10424 50  0000 C CNN
+F 2 "Connector_Molex:Molex_Micro-Fit_3.0_43650-0500_1x05_P3.00mm_Horizontal" H 1800 10350 50  0001 C CNN
+F 3 "" H 1800 10350 50  0001 C CNN
+	1    1800 10350
+	-1   0    0    -1  
+$EndComp
+$Comp
+L ariadne-rescue:LDH-45B-1050-mech-ariadne U51
+U 1 1 5FBF1476
+P 2900 10350
+F 0 "U51" H 3200 10515 50  0000 C CNN
+F 1 "LDH-45B-1050-mech" H 3200 10424 50  0000 C CNN
+F 2 "ariadne:MeanWell-LDH-45B-1050-ariadne" H 2900 10350 50  0001 C CNN
+F 3 "" H 2900 10350 50  0001 C CNN
+	1    2900 10350
+	1    0    0    -1  
+$EndComp
+Text GLabel 2400 3800 2    50   Input ~ 0
+VIN+Master
+Text GLabel 900  3800 0    50   Input ~ 0
+VIN-Master
+Wire Wire Line
+	2000 10450 2700 10450
+Wire Wire Line
+	2000 10550 2700 10550
+Wire Wire Line
+	2000 10650 2700 10650
+Wire Wire Line
+	2000 10750 2700 10750
+Wire Wire Line
+	2000 10850 2700 10850
+$Comp
+L ariadne-rescue:Meanwell-LDD-1200LW-connector-ariadne U63
+U 1 1 5FBF1483
+P 12550 2700
+F 0 "U63" H 12928 2688 50  0000 L CNN
+F 1 "Meanwell-LDD-1200LW-connector" H 12928 2597 50  0000 L CNN
+F 2 "Connector_Molex:Molex_Micro-Fit_3.0_43650-0300_1x03_P3.00mm_Horizontal" H 12350 2700 50  0001 C CNN
+F 3 "" H 12350 2700 50  0001 C CNN
+	1    12550 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L ariadne-rescue:Meanwell-LDD-1200LW-connector-ariadne U62
+U 1 1 5FBF1489
+P 11950 4450
+F 0 "U62" H 11892 4815 50  0000 C CNN
+F 1 "Meanwell-LDD-1200LW-connector" H 11892 4724 50  0000 C CNN
+F 2 "Connector_Molex:Molex_Micro-Fit_3.0_43650-0300_1x03_P3.00mm_Horizontal" H 11750 4450 50  0001 C CNN
+F 3 "" H 11750 4450 50  0001 C CNN
+	1    11950 4450
+	-1   0    0    -1  
+$EndComp
+Text GLabel 12550 3250 3    50   Input ~ 0
+LDD_1200-DIM
+Wire Wire Line
+	12550 3000 12550 3250
+Text GLabel 12100 2600 0    50   Input ~ 0
+VIN+Master
+Text GLabel 12100 2800 0    50   Input ~ 0
+VIN-Master
+Wire Wire Line
+	12400 4550 13800 4550
+Wire Wire Line
+	12400 4350 13800 4350
+Wire Wire Line
+	11950 4750 14250 4750
+$Comp
+L ariadne-rescue:Connector-LED-ariadne U64
+U 1 1 5FBF1496
+P 13750 5400
+F 0 "U64" H 13800 5565 50  0000 C CNN
+F 1 "Connector-LED" H 13800 5474 50  0000 C CNN
+F 2 "Connector_JST:JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical" H 13800 5383 50  0000 C CNN
+F 3 "" H 13750 5400 50  0001 C CNN
+	1    13750 5400
+	1    0    0    -1  
+$EndComp
+Text GLabel 14000 5550 2    50   Input ~ 0
+LDD_1200_OUT-
+Text GLabel 13600 5550 0    50   Input ~ 0
+LDD_1200_OUT+
+Wire Notes Line
+	4550 11150 4550 8000
+Wire Notes Line
+	4550 8000 700  8000
+Wire Notes Line
+	700  8000 700  11150
+Wire Notes Line
+	700  11150 4550 11150
+Wire Notes Line
+	11400 6050 15800 6050
+Wire Notes Line
+	15800 6050 15800 2100
+Wire Notes Line
+	15800 2100 11400 2100
+Wire Notes Line
+	11400 2100 11400 6050
+Wire Notes Line
+	7100 5050 7100 9500
+Wire Notes Line
+	7100 9500 10950 9500
+Wire Notes Line
+	10950 9500 10950 5050
+Wire Notes Line
+	10950 5050 7100 5050
+Wire Notes Line
+	3950 850  3950 3150
+Wire Notes Line
+	3950 3150 6650 3150
+Wire Notes Line
+	6650 3150 6650 850 
+Wire Notes Line
+	6650 850  3950 850 
+Wire Notes Line
+	8700 2750 8700 4750
+Wire Notes Line
+	8700 4750 11100 4750
+Wire Notes Line
+	11100 4750 11100 2750
+Wire Notes Line
+	11100 2750 8700 2750
+$Comp
+L ariadne-rescue:Bridgelux-Vero-29-mech-ariadne U56
+U 1 1 5FBF14B2
+P 7900 10200
+F 0 "U56" H 7850 9650 50  0000 L CNN
+F 1 "Bridgelux-Vero-29-mech" H 7450 9800 50  0000 L CNN
+F 2 "ariadne:Vero-29-mech" H 7900 10200 50  0001 C CNN
+F 3 "" H 7900 10200 50  0001 C CNN
+	1    7900 10200
+	1    0    0    -1  
+$EndComp
+$Comp
+L ariadne-rescue:Bridgelux-Vero-18-mech-ariadne U59
+U 1 1 5FBF14B8
+P 8950 10200
+F 0 "U59" H 9078 10188 50  0000 L CNN
+F 1 "Bridgelux-Vero-18-mech" H 9078 10097 50  0000 L CNN
+F 2 "ariadne:Vero-18-mech" H 8950 10200 50  0001 C CNN
+F 3 "" H 8950 10200 50  0001 C CNN
+	1    8950 10200
+	1    0    0    -1  
+$EndComp
+$Comp
+L ariadne-rescue:Noctua-NF-A4x10-Fan-mech-ariadne U54
+U 1 1 5FBF14BE
+P 6400 10850
+F 0 "U54" H 6828 10813 50  0000 L CNN
+F 1 "Noctua-NF-A4x10-Fan-mech" H 6828 10722 50  0000 L CNN
+F 2 "ariadne:Noctua-NF-A4x10-mech" H 5250 11200 50  0001 C CNN
+F 3 "" H 5250 11200 50  0001 C CNN
+	1    6400 10850
+	1    0    0    -1  
+$EndComp
+$Comp
+L ariadne-rescue:SWITCH_ROCKER-300DP3J1BLKM6QE-ariadne U44
+U 1 1 5FBF14C4
+P 2200 2200
+F 0 "U44" V 2665 2175 50  0000 C CNN
+F 1 "SWITCH_ROCKER-300DP3J1BLKM6QE" V 2574 2175 50  0000 C CNN
+F 2 "ariadne:SWITCH_ROCKER-300DP3J1BLKM6QE" H 2200 2200 50  0001 C CNN
+F 3 "" H 2200 2200 50  0001 C CNN
+	1    2200 2200
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	1650 2100 1950 2100
+NoConn ~ 2500 2200
+$Comp
+L ariadne-rescue:Connector-LED-ariadne U46
+U 1 1 5FBF14CC
+P 2200 13300
+F 0 "U46" H 2250 13465 50  0000 C CNN
+F 1 "Connector-LED" H 2250 13374 50  0000 C CNN
+F 2 "Connector_JST:JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical" H 2250 13283 50  0000 C CNN
+F 3 "" H 2200 13300 50  0001 C CNN
+	1    2200 13300
+	1    0    0    -1  
+$EndComp
+Text GLabel 2000 12350 0    50   Input ~ 0
+VIN-Master
+Text GLabel 2000 12250 0    50   Input ~ 0
+VIN+Master
+Wire Notes Line
+	4450 14800 4450 11650
+Wire Notes Line
+	4450 11650 600  11650
+Wire Notes Line
+	600  11650 600  14800
+Wire Notes Line
+	600  14800 4450 14800
+$Comp
+L ariadne-rescue:LDH-65B-connector-ariadne U45
+U 1 1 5FBF14D8
+P 2200 12150
+F 0 "U45" H 2928 11946 50  0000 L CNN
+F 1 "LDH-65B-connector-master" H 2928 11855 50  0000 L CNN
+F 2 "Connector_Molex:Molex_Micro-Fit_3.0_43650-0400_1x04_P3.00mm_Horizontal" H 2200 12150 50  0001 C CNN
+F 3 "" H 2200 12150 50  0001 C CNN
+	1    2200 12150
+	1    0    0    -1  
+$EndComp
+Text GLabel 9800 1550 2    50   Input ~ 0
+LDH-65B-DIM
+Text GLabel 2000 12550 0    50   Input ~ 0
+LDH-65B-DIM
+Text GLabel 9850 2250 2    50   Input ~ 0
+BOARD_GND
+Text GLabel 2000 12450 0    50   Input ~ 0
+BOARD_GND
+$Comp
+L ariadne-rescue:LDH-65B-connector-ariadne U42
+U 1 1 5FBF14E2
+P 1850 13900
+F 0 "U42" H 2092 14065 50  0000 C CNN
+F 1 "LDH-65B-connector-master" H 2092 13974 50  0000 C CNN
+F 2 "Connector_Molex:Molex_Micro-Fit_3.0_43650-0400_1x04_P3.00mm_Horizontal" H 1850 13900 50  0001 C CNN
+F 3 "" H 1850 13900 50  0001 C CNN
+	1    1850 13900
+	-1   0    0    -1  
+$EndComp
+$Comp
+L ariadne-rescue:LDH-65B-mech-ariadne U50
+U 1 1 5FBF14E8
+P 2700 13900
+F 0 "U50" H 3000 14065 50  0000 C CNN
+F 1 "LDH-65B-mech" H 3000 13974 50  0000 C CNN
+F 2 "ariadne:MeanWell-LDH-65" H 2700 13900 50  0001 C CNN
+F 3 "" H 2700 13900 50  0001 C CNN
+	1    2700 13900
+	1    0    0    -1  
+$EndComp
+Text GLabel 3500 14200 2    50   Input ~ 0
+65B_OUT+
+Text GLabel 3500 14300 2    50   Input ~ 0
+65B_OUT-
+Wire Wire Line
+	2050 14000 2500 14000
+Wire Wire Line
+	2050 14100 2500 14100
+Wire Wire Line
+	2050 14200 2500 14200
+Wire Wire Line
+	2050 14300 2500 14300
+Text GLabel 2450 13450 2    50   Input ~ 0
+65B_OUT-
+Text GLabel 2050 13450 0    50   Input ~ 0
+65B_OUT+
+Wire Wire Line
+	1550 1450 1650 1450
+Wire Wire Line
+	1650 1450 1650 2100
+Wire Wire Line
+	1250 1450 1250 2850
+Connection ~ 1250 2850
+Wire Wire Line
+	1250 1450 1350 1450
+$Comp
+L ariadne-rescue:POWER_CONNECTOR-DCJ250-20-B-K1-A-ariadne U40
+U 1 1 5FBF14FB
+P 1450 1200
+F 0 "U40" H 1222 1154 50  0000 R CNN
+F 1 "POWER_CONNECTOR-DCJ250-20-B-K1-A" H 1222 1245 50  0000 R CNN
+F 2 "ariadne:POWER_JACK_DCJ250-20-B-K1-A" H 1450 1200 50  0001 C CNN
+F 3 "" H 1450 1200 50  0001 C CNN
+	1    1450 1200
+	-1   0    0    1   
+$EndComp
+NoConn ~ 1450 950 
+NoConn ~ 1900 8900
+Text GLabel 1900 8800 0    50   Input ~ 0
+BOARD_GND
+Text GLabel 1900 8600 0    50   Input ~ 0
+VIN+Master
+Text GLabel 1900 8700 0    50   Input ~ 0
+VIN-Master
+Text GLabel 1900 9000 0    50   Input ~ 0
+LDH_45B-DIM
+$Comp
+L Connector:Conn_01x05_Male J5
+U 1 1 5FBF1507
+P 12450 7850
+F 0 "J5" H 12558 8231 50  0000 C CNN
+F 1 "Conn_01x05_Male" H 12558 8140 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical" H 12450 7850 50  0001 C CNN
+F 3 "~" H 12450 7850 50  0001 C CNN
+	1    12450 7850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x05_Male J6
+U 1 1 5FBF150D
+P 13000 7850
+F 0 "J6" H 13108 8231 50  0000 C CNN
+F 1 "Conn_01x05_Male" H 13108 8140 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical" H 13000 7850 50  0001 C CNN
+F 3 "~" H 13000 7850 50  0001 C CNN
+	1    13000 7850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x05_Male J7
+U 1 1 5FBF1513
+P 13550 7850
+F 0 "J7" H 13658 8231 50  0000 C CNN
+F 1 "Conn_01x05_Male" H 13658 8140 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical" H 13550 7850 50  0001 C CNN
+F 3 "~" H 13550 7850 50  0001 C CNN
+	1    13550 7850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x05_Male J8
+U 1 1 5FBF1519
+P 14150 7850
+F 0 "J8" H 14258 8231 50  0000 C CNN
+F 1 "Conn_01x05_Male" H 14258 8140 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical" H 14150 7850 50  0001 C CNN
+F 3 "~" H 14150 7850 50  0001 C CNN
+	1    14150 7850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12650 7650 12650 7750
+Connection ~ 12650 8050
+Connection ~ 12650 7750
+Wire Wire Line
+	12650 7750 12650 7850
+Connection ~ 12650 7850
+Wire Wire Line
+	12650 7850 12650 7950
+Connection ~ 12650 7950
+Wire Wire Line
+	12650 7950 12650 8050
+Wire Wire Line
+	13200 7650 13200 7750
+Connection ~ 13200 8050
+Connection ~ 13200 7750
+Wire Wire Line
+	13200 7750 13200 7850
+Connection ~ 13200 7850
+Wire Wire Line
+	13200 7850 13200 7950
+Connection ~ 13200 7950
+Wire Wire Line
+	13200 7950 13200 8050
+Wire Wire Line
+	13750 7650 13750 7750
+Connection ~ 13750 8050
+Connection ~ 13750 7750
+Wire Wire Line
+	13750 7750 13750 7850
+Connection ~ 13750 7850
+Wire Wire Line
+	13750 7850 13750 7950
+Connection ~ 13750 7950
+Wire Wire Line
+	13750 7950 13750 8050
+Wire Wire Line
+	1950 3800 2400 3800
+Connection ~ 1950 3800
+Wire Wire Line
+	1250 3800 900  3800
+Wire Wire Line
+	1250 3800 1250 3900
+Connection ~ 1250 3800
+Wire Wire Line
+	14350 7650 14350 7750
+Connection ~ 14350 8050
+Connection ~ 14350 7750
+Wire Wire Line
+	14350 7750 14350 7850
+Connection ~ 14350 7850
+Wire Wire Line
+	14350 7850 14350 7950
+Connection ~ 14350 7950
+Wire Wire Line
+	14350 7950 14350 8050
+$Comp
+L ariadne-rescue:Noctua-NF-A4x10-Fan-mech-ariadne U57
+U 1 1 5FBF1544
+P 8250 11700
+F 0 "U57" H 8678 11663 50  0000 L CNN
+F 1 "Noctua-NF-A4x10-Fan-mech-ariadne" H 8678 11572 50  0000 L CNN
+F 2 "ariadne:Noctua-NF-A4x10-mech" H 7100 12050 50  0001 C CNN
+F 3 "" H 7100 12050 50  0001 C CNN
+	1    8250 11700
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
