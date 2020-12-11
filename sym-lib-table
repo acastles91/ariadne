@@ -2,4 +2,5 @@
   (lib (name upuaut-rescue)(type Legacy)(uri /home/antonio/OpenSourceCelluloid/pcb/upuaut/upuaut/upuaut-rescue.lib)(options "")(descr ""))
   (lib (name upuaut_2Nils-rescue)(type Legacy)(uri /home/antonio/OpenSourceCelluloid/pcb/upuaut/upuaut/upuaut_2Nils-rescue.lib)(options "")(descr ""))
   (lib (name ariadne-rescue)(type Legacy)(uri ${KIPRJMOD}/ariadne-rescue.lib)(options "")(descr ""))
+  (lib (name ariadne-v3-rescue)(type Legacy)(uri ${KIPRJMOD}/ariadne-v3-rescue.lib)(options "")(descr ""))
 )

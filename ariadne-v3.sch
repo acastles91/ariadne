@@ -438,7 +438,7 @@ F 3 "~" H 7200 3700 50  0001 C CNN
 $EndComp
 Connection ~ 7200 3700
 $Comp
-L ariadne-rescue:Meanwell-LDD-1200LW-ariadne U?
+L ariadne-v3-rescue:Meanwell-LDD-1200LW-ariadne-ariadne-rescue U?
 U 1 1 5FC415B8
 P 4200 8500
 AR Path="/5FBCFD95/5FC415B8" Ref="U?"  Part="1" 
@@ -462,7 +462,7 @@ AR Path="/5FBCFD95/5FC415C0" Ref="U?"  Part="1"
 AR Path="/5FC415C0" Ref="U5"  Part="1" 
 F 0 "U5" H 2728 6738 50  0000 L CNN
 F 1 "Meanwell-LDD-1200LW-connector" H 2728 6647 50  0000 L CNN
-F 2 "Connector_Molex:Molex_Micro-Fit_3.0_43650-0300_1x03_P3.00mm_Horizontal" H 2150 6750 50  0001 C CNN
+F 2 "Connector_Molex:Molex_Micro-Fit_3.0_43650-0315_1x03_P3.00mm_Vertical" H 2150 6750 50  0001 C CNN
 F 3 "" H 2150 6750 50  0001 C CNN
 	1    2350 6750
 	1    0    0    -1  
@@ -475,7 +475,7 @@ AR Path="/5FBCFD95/5FC415C6" Ref="U?"  Part="1"
 AR Path="/5FC415C6" Ref="U2"  Part="1" 
 F 0 "U2" H 1692 8865 50  0000 C CNN
 F 1 "Meanwell-LDD-1200LW-connector" H 1692 8774 50  0000 C CNN
-F 2 "Connector_Molex:Molex_Micro-Fit_3.0_43650-0300_1x03_P3.00mm_Horizontal" H 1550 8500 50  0001 C CNN
+F 2 "Connector_Molex:Molex_Micro-Fit_3.0_43650-0315_1x03_P3.00mm_Vertical" H 1550 8500 50  0001 C CNN
 F 3 "" H 1550 8500 50  0001 C CNN
 	1    1750 8500
 	-1   0    0    -1  
@@ -733,61 +733,6 @@ Connection ~ 13100 3100
 Wire Wire Line
 	13100 3100 13300 3100
 $Comp
-L ariadne-rescue:Bridgelux-Vero-18-mech-v3-ariadne U29
-U 1 1 5FCA211F
-P 14750 1600
-F 0 "U29" H 14878 1588 50  0000 L CNN
-F 1 "Bridgelux-Vero-18-mech-v3-ariadne" H 14878 1497 50  0000 L CNN
-F 2 "ariadne:Vero-18-mech" H 14750 1600 50  0001 C CNN
-F 3 "" H 14750 1600 50  0001 C CNN
-	1    14750 1600
-	1    0    0    -1  
-$EndComp
-$Comp
-L ariadne-rescue:Bridgelux-Vero-18-mech-v3-ariadne U30
-U 1 1 5FCA224B
-P 14750 2250
-F 0 "U30" H 14878 2238 50  0000 L CNN
-F 1 "Bridgelux-Vero-18-mech-v3-ariadne" H 14878 2147 50  0000 L CNN
-F 2 "ariadne:Vero-18-mech" H 14750 2250 50  0001 C CNN
-F 3 "" H 14750 2250 50  0001 C CNN
-	1    14750 2250
-	1    0    0    -1  
-$EndComp
-$Comp
-L ariadne-rescue:Bridgelux-Vero-18-mech-v3-ariadne U31
-U 1 1 5FCA247B
-P 16800 1550
-F 0 "U31" H 16928 1538 50  0000 L CNN
-F 1 "Bridgelux-Vero-18-mech-v3-ariadne" H 16928 1447 50  0000 L CNN
-F 2 "ariadne:Vero-18-mech" H 16800 1550 50  0001 C CNN
-F 3 "" H 16800 1550 50  0001 C CNN
-	1    16800 1550
-	1    0    0    -1  
-$EndComp
-$Comp
-L ariadne-rescue:Bridgelux-Vero-18-mech-v3-ariadne U32
-U 1 1 5FCA2562
-P 16800 2300
-F 0 "U32" H 16928 2288 50  0000 L CNN
-F 1 "Bridgelux-Vero-18-mech-v3-ariadne" H 16928 2197 50  0000 L CNN
-F 2 "ariadne:Vero-18-mech" H 16800 2300 50  0001 C CNN
-F 3 "" H 16800 2300 50  0001 C CNN
-	1    16800 2300
-	1    0    0    -1  
-$EndComp
-$Comp
-L ariadne-rescue:Bridgelux-Vero-18-mech-v3-ariadne U36
-U 1 1 5FCA26A9
-P 19100 2300
-F 0 "U36" H 19228 2288 50  0000 L CNN
-F 1 "Bridgelux-Vero-18-mech-v3-ariadne" H 19228 2197 50  0000 L CNN
-F 2 "ariadne:Vero-18-mech" H 19100 2300 50  0001 C CNN
-F 3 "" H 19100 2300 50  0001 C CNN
-	1    19100 2300
-	1    0    0    -1  
-$EndComp
-$Comp
 L ariadne-rescue:Bridgelux-Vero-18-mech-v3-ariadne U35
 U 1 1 5FCA279B
 P 19100 1550
@@ -797,85 +742,6 @@ F 2 "ariadne:Vero-18-mech" H 19100 1550 50  0001 C CNN
 F 3 "" H 19100 1550 50  0001 C CNN
 	1    19100 1550
 	1    0    0    -1  
-$EndComp
-$Comp
-L ariadne-rescue:heatsink U39
-U 1 1 5FCAE8AC
-P 20450 2800
-F 0 "U39" H 20778 2904 50  0000 L CNN
-F 1 "heatsink" H 20778 2813 50  0000 L CNN
-F 2 "ariadne:Wakefield-heatsink" H 20450 2800 50  0001 C CNN
-F 3 "" H 20450 2800 50  0001 C CNN
-	1    20450 2800
-	1    0    0    -1  
-$EndComp
-$Comp
-L ariadne-rescue:heatsink U37
-U 1 1 5FCB0023
-P 19700 2800
-F 0 "U37" H 20028 2904 50  0000 L CNN
-F 1 "heatsink" H 20028 2813 50  0000 L CNN
-F 2 "ariadne:Wakefield-heatsink" H 19700 2800 50  0001 C CNN
-F 3 "" H 19700 2800 50  0001 C CNN
-	1    19700 2800
-	1    0    0    -1  
-$EndComp
-$Comp
-L ariadne-rescue:heatsink U41
-U 1 1 5FCB02EE
-P 21350 2800
-F 0 "U41" H 21678 2904 50  0000 L CNN
-F 1 "heatsink" H 21678 2813 50  0000 L CNN
-F 2 "ariadne:Wakefield-heatsink" H 21350 2800 50  0001 C CNN
-F 3 "" H 21350 2800 50  0001 C CNN
-	1    21350 2800
-	1    0    0    -1  
-$EndComp
-$Comp
-L ariadne-rescue:heatsink U38
-U 1 1 5FCB046F
-P 19700 3300
-F 0 "U38" H 20028 3404 50  0000 L CNN
-F 1 "heatsink" H 20028 3313 50  0000 L CNN
-F 2 "ariadne:Wakefield-heatsink" H 19700 3300 50  0001 C CNN
-F 3 "" H 19700 3300 50  0001 C CNN
-	1    19700 3300
-	1    0    0    -1  
-$EndComp
-$Comp
-L ariadne-rescue:heatsink U40
-U 1 1 5FCB069A
-P 20450 3300
-F 0 "U40" H 20778 3404 50  0000 L CNN
-F 1 "heatsink" H 20778 3313 50  0000 L CNN
-F 2 "ariadne:Wakefield-heatsink" H 20450 3300 50  0001 C CNN
-F 3 "" H 20450 3300 50  0001 C CNN
-	1    20450 3300
-	1    0    0    -1  
-$EndComp
-$Comp
-L ariadne-rescue:heatsink U42
-U 1 1 5FCB080B
-P 21350 3300
-F 0 "U42" H 21678 3404 50  0000 L CNN
-F 1 "heatsink" H 21678 3313 50  0000 L CNN
-F 2 "ariadne:Wakefield-heatsink" H 21350 3300 50  0001 C CNN
-F 3 "" H 21350 3300 50  0001 C CNN
-	1    21350 3300
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 5FCB4B74
-P 17050 6000
-AR Path="/5FBCFD95/5FCB4B74" Ref="#PWR?"  Part="1" 
-AR Path="/5FCB4B74" Ref="#PWR021"  Part="1" 
-F 0 "#PWR021" H 17050 5750 50  0001 C CNN
-F 1 "GND" H 17055 5827 50  0000 C CNN
-F 2 "" H 17050 6000 50  0001 C CNN
-F 3 "" H 17050 6000 50  0001 C CNN
-	1    17050 6000
-	-1   0    0    1   
 $EndComp
 Wire Wire Line
 	2200 8400 3750 8400
@@ -896,7 +762,7 @@ Wire Wire Line
 Wire Wire Line
 	4650 8700 4650 8600
 $Comp
-L ariadne-rescue:Meanwell-LDD-1200LW-ariadne U?
+L ariadne-v3-rescue:Meanwell-LDD-1200LW-ariadne-ariadne-rescue U?
 U 1 1 5FCE0760
 P 4150 12900
 AR Path="/5FBCFD95/5FCE0760" Ref="U?"  Part="1" 
@@ -929,7 +795,7 @@ Wire Wire Line
 Wire Wire Line
 	4600 13100 4600 13000
 $Comp
-L ariadne-rescue:Meanwell-LDD-1200LW-ariadne U?
+L ariadne-v3-rescue:Meanwell-LDD-1200LW-ariadne-ariadne-rescue U?
 U 1 1 5FCE2FFC
 P 8950 8500
 AR Path="/5FBCFD95/5FCE2FFC" Ref="U?"  Part="1" 
@@ -953,7 +819,7 @@ AR Path="/5FBCFD95/5FCE3004" Ref="U?"  Part="1"
 AR Path="/5FCE3004" Ref="U14"  Part="1" 
 F 0 "U14" H 7478 6738 50  0000 L CNN
 F 1 "Meanwell-LDD-1200LW-connector" H 7478 6647 50  0000 L CNN
-F 2 "Connector_Molex:Molex_Micro-Fit_3.0_43650-0300_1x03_P3.00mm_Horizontal" H 6900 6750 50  0001 C CNN
+F 2 "Connector_Molex:Molex_Micro-Fit_3.0_43650-0315_1x03_P3.00mm_Vertical" H 6900 6750 50  0001 C CNN
 F 3 "" H 6900 6750 50  0001 C CNN
 	1    7100 6750
 	1    0    0    -1  
@@ -966,7 +832,7 @@ AR Path="/5FBCFD95/5FCE300A" Ref="U?"  Part="1"
 AR Path="/5FCE300A" Ref="U12"  Part="1" 
 F 0 "U12" H 6442 8865 50  0000 C CNN
 F 1 "Meanwell-LDD-1200LW-connector" H 6442 8774 50  0000 C CNN
-F 2 "Connector_Molex:Molex_Micro-Fit_3.0_43650-0300_1x03_P3.00mm_Horizontal" H 6300 8500 50  0001 C CNN
+F 2 "Connector_Molex:Molex_Micro-Fit_3.0_43650-0315_1x03_P3.00mm_Vertical" H 6300 8500 50  0001 C CNN
 F 3 "" H 6300 8500 50  0001 C CNN
 	1    6500 8500
 	-1   0    0    -1  
@@ -1017,7 +883,7 @@ Wire Wire Line
 Wire Wire Line
 	9400 8700 9400 8600
 $Comp
-L ariadne-rescue:Meanwell-LDD-1200LW-ariadne U?
+L ariadne-v3-rescue:Meanwell-LDD-1200LW-ariadne-ariadne-rescue U?
 U 1 1 5FCE5B4D
 P 9000 12950
 AR Path="/5FBCFD95/5FCE5B4D" Ref="U?"  Part="1" 
@@ -1050,7 +916,7 @@ Wire Wire Line
 Wire Wire Line
 	9450 13150 9450 13050
 $Comp
-L ariadne-rescue:Meanwell-LDD-1200LW-ariadne U?
+L ariadne-v3-rescue:Meanwell-LDD-1200LW-ariadne-ariadne-rescue U?
 U 1 1 5FCE8DFF
 P 13800 8500
 AR Path="/5FBCFD95/5FCE8DFF" Ref="U?"  Part="1" 
@@ -1074,7 +940,7 @@ AR Path="/5FBCFD95/5FCE8E07" Ref="U?"  Part="1"
 AR Path="/5FCE8E07" Ref="U22"  Part="1" 
 F 0 "U22" H 12328 6738 50  0000 L CNN
 F 1 "Meanwell-LDD-1200LW-connector" H 12328 6647 50  0000 L CNN
-F 2 "Connector_Molex:Molex_Micro-Fit_3.0_43650-0300_1x03_P3.00mm_Horizontal" H 11750 6750 50  0001 C CNN
+F 2 "Connector_Molex:Molex_Micro-Fit_3.0_43650-0315_1x03_P3.00mm_Vertical" H 11750 6750 50  0001 C CNN
 F 3 "" H 11750 6750 50  0001 C CNN
 	1    11950 6750
 	1    0    0    -1  
@@ -1087,7 +953,7 @@ AR Path="/5FBCFD95/5FCE8E0D" Ref="U?"  Part="1"
 AR Path="/5FCE8E0D" Ref="U20"  Part="1" 
 F 0 "U20" H 11292 8865 50  0000 C CNN
 F 1 "Meanwell-LDD-1200LW-connector" H 11292 8774 50  0000 C CNN
-F 2 "Connector_Molex:Molex_Micro-Fit_3.0_43650-0300_1x03_P3.00mm_Horizontal" H 11150 8500 50  0001 C CNN
+F 2 "Connector_Molex:Molex_Micro-Fit_3.0_43650-0315_1x03_P3.00mm_Vertical" H 11150 8500 50  0001 C CNN
 F 3 "" H 11150 8500 50  0001 C CNN
 	1    11350 8500
 	-1   0    0    -1  
@@ -1125,7 +991,7 @@ Wire Wire Line
 Wire Wire Line
 	14250 8700 14250 8600
 $Comp
-L ariadne-rescue:Meanwell-LDD-1200LW-ariadne U?
+L ariadne-v3-rescue:Meanwell-LDD-1200LW-ariadne-ariadne-rescue U?
 U 1 1 5FCEC44D
 P 13800 13000
 AR Path="/5FBCFD95/5FCEC44D" Ref="U?"  Part="1" 
@@ -1149,7 +1015,7 @@ AR Path="/5FBCFD95/5FCEC455" Ref="U?"  Part="1"
 AR Path="/5FCEC455" Ref="U23"  Part="1" 
 F 0 "U23" H 12328 11238 50  0000 L CNN
 F 1 "Meanwell-LDD-1200LW-connector" H 12328 11147 50  0000 L CNN
-F 2 "Connector_Molex:Molex_Micro-Fit_3.0_43650-0300_1x03_P3.00mm_Horizontal" H 11750 11250 50  0001 C CNN
+F 2 "Connector_Molex:Molex_Micro-Fit_3.0_43650-0315_1x03_P3.00mm_Vertical" H 11750 11250 50  0001 C CNN
 F 3 "" H 11750 11250 50  0001 C CNN
 	1    11950 11250
 	1    0    0    -1  
@@ -1162,7 +1028,7 @@ AR Path="/5FBCFD95/5FCEC45B" Ref="U?"  Part="1"
 AR Path="/5FCEC45B" Ref="U21"  Part="1" 
 F 0 "U21" H 11292 13365 50  0000 C CNN
 F 1 "Meanwell-LDD-1200LW-connector" H 11292 13274 50  0000 C CNN
-F 2 "Connector_Molex:Molex_Micro-Fit_3.0_43650-0300_1x03_P3.00mm_Horizontal" H 11150 13000 50  0001 C CNN
+F 2 "Connector_Molex:Molex_Micro-Fit_3.0_43650-0315_1x03_P3.00mm_Vertical" H 11150 13000 50  0001 C CNN
 F 3 "" H 11150 13000 50  0001 C CNN
 	1    11350 13000
 	-1   0    0    -1  
@@ -1332,19 +1198,6 @@ Wire Wire Line
 Wire Wire Line
 	11550 2100 11800 2100
 $Comp
-L power:GND #PWR?
-U 1 1 5FC5BC50
-P 17000 5000
-AR Path="/5FBCFD95/5FC5BC50" Ref="#PWR?"  Part="1" 
-AR Path="/5FC5BC50" Ref="#PWR020"  Part="1" 
-F 0 "#PWR020" H 17000 4750 50  0001 C CNN
-F 1 "GND" H 17005 4827 50  0000 C CNN
-F 2 "" H 17000 5000 50  0001 C CNN
-F 3 "" H 17000 5000 50  0001 C CNN
-	1    17000 5000
-	-1   0    0    1   
-$EndComp
-$Comp
 L power:+36V #PWR04
 U 1 1 5FC61317
 P 5550 3700
@@ -1367,79 +1220,14 @@ F 3 "" H 5550 1950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+12V #PWR?
-U 1 1 5FC67157
-P 17250 6000
-AR Path="/5FBCFD95/5FC67157" Ref="#PWR?"  Part="1" 
-AR Path="/5FC67157" Ref="#PWR023"  Part="1" 
-F 0 "#PWR023" H 17250 5850 50  0001 C CNN
-F 1 "+12V" H 17265 6173 50  0000 C CNN
-F 2 "" H 17250 6000 50  0001 C CNN
-F 3 "" H 17250 6000 50  0001 C CNN
-	1    17250 6000
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+12V #PWR?
-U 1 1 5FC69DDA
-P 17200 5000
-AR Path="/5FBCFD95/5FC69DDA" Ref="#PWR?"  Part="1" 
-AR Path="/5FC69DDA" Ref="#PWR022"  Part="1" 
-F 0 "#PWR022" H 17200 4850 50  0001 C CNN
-F 1 "+12V" H 17215 5173 50  0000 C CNN
-F 2 "" H 17200 5000 50  0001 C CNN
-F 3 "" H 17200 5000 50  0001 C CNN
-	1    17200 5000
-	1    0    0    -1  
-$EndComp
-NoConn ~ 21350 2550
-NoConn ~ 21350 3050
-NoConn ~ 20450 3050
-NoConn ~ 20450 2550
-NoConn ~ 19700 2550
-NoConn ~ 19700 3050
-$Comp
 L ariadne-rescue:Noctua-NF-A4x10-Simple-Fan-ariadne U33
 U 1 1 5FCBEFDA
-P 17300 5300
-F 0 "U33" H 17728 5379 50  0000 L CNN
-F 1 "Noctua-NF-A4x10-Simple-Fan-ariadne" H 17728 5288 50  0000 L CNN
-F 2 "Connector_JST:JST_XH_B2B-XH-AM_1x02_P2.50mm_Vertical" H 16150 5650 50  0001 C CNN
-F 3 "" H 16150 5650 50  0001 C CNN
-	1    17300 5300
-	1    0    0    -1  
-$EndComp
-$Comp
-L ariadne-rescue:Noctua-NF-A4x10-Simple-Fan-ariadne U34
-U 1 1 5FCBF3F6
-P 17350 6300
-F 0 "U34" H 17778 6379 50  0000 L CNN
-F 1 "Noctua-NF-A4x10-Simple-Fan-ariadne" H 17778 6288 50  0000 L CNN
-F 2 "Connector_JST:JST_XH_B2B-XH-AM_1x02_P2.50mm_Vertical" H 16200 6650 50  0001 C CNN
-F 3 "" H 16200 6650 50  0001 C CNN
-	1    17350 6300
-	1    0    0    -1  
-$EndComp
-$Comp
-L ariadne-rescue:Noctua-NF-A6x25Fan-mech-ariadne U43
-U 1 1 5FCC3304
-P 20500 5100
-F 0 "U43" H 20928 5063 50  0000 L CNN
-F 1 "Noctua-NF-A6x25Fan-mech-ariadne" H 20928 4972 50  0000 L CNN
-F 2 "ariadne:Noctua-NF-A6x25-mech" H 19350 5450 50  0001 C CNN
-F 3 "" H 19350 5450 50  0001 C CNN
-	1    20500 5100
-	1    0    0    -1  
-$EndComp
-$Comp
-L ariadne-rescue:Noctua-NF-A6x25Fan-mech-ariadne U44
-U 1 1 5FCC35D4
-P 20500 6300
-F 0 "U44" H 20928 6263 50  0000 L CNN
-F 1 "Noctua-NF-A6x25Fan-mech-ariadne" H 20928 6172 50  0000 L CNN
-F 2 "ariadne:Noctua-NF-A6x25-mech" H 19350 6650 50  0001 C CNN
-F 3 "" H 19350 6650 50  0001 C CNN
-	1    20500 6300
+P 15650 4400
+F 0 "U33" H 16078 4479 50  0000 L CNN
+F 1 "Noctua-NF-A4x10-Simple-Fan-ariadne" H 16078 4388 50  0000 L CNN
+F 2 "Connector_JST:JST_XH_B2B-XH-AM_1x02_P2.50mm_Vertical" H 14500 4750 50  0001 C CNN
+F 3 "" H 14500 4750 50  0001 C CNN
+	1    15650 4400
 	1    0    0    -1  
 $EndComp
 Text GLabel 3700 13000 0    50   Input ~ 0
@@ -1486,4 +1274,286 @@ Text GLabel 14250 8300 2    50   Input ~ 0
 LDD_3-OUT+
 Text GLabel 14250 8700 2    50   Input ~ 0
 LDD_3-OUT-
+$Comp
+L ariadne-rescue:Noctua-NF-A4x10-Simple-Fan-ariadne U4
+U 1 1 5FE084EC
+P 15650 5150
+F 0 "U4" H 16078 5229 50  0000 L CNN
+F 1 "Noctua-NF-A4x10-Simple-Fan-ariadne" H 16078 5138 50  0000 L CNN
+F 2 "Connector_JST:JST_XH_B2B-XH-AM_1x02_P2.50mm_Vertical" H 14500 5500 50  0001 C CNN
+F 3 "" H 14500 5500 50  0001 C CNN
+	1    15650 5150
+	1    0    0    -1  
+$EndComp
+$Comp
+L ariadne-rescue:Noctua-NF-A4x10-Simple-Fan-ariadne U1
+U 1 1 5FE0B779
+P 15650 3600
+F 0 "U1" H 16078 3679 50  0000 L CNN
+F 1 "Noctua-NF-A4x10-Simple-Fan-ariadne" H 16078 3588 50  0000 L CNN
+F 2 "Connector_JST:JST_XH_B2B-XH-AM_1x02_P2.50mm_Vertical" H 14500 3950 50  0001 C CNN
+F 3 "" H 14500 3950 50  0001 C CNN
+	1    15650 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L ariadne-rescue:Noctua-NF-A4x10-Simple-Fan-ariadne U44
+U 1 1 5FE123D0
+P 18100 4400
+F 0 "U44" H 18528 4479 50  0000 L CNN
+F 1 "Noctua-NF-A4x10-Simple-Fan-ariadne" H 18528 4388 50  0000 L CNN
+F 2 "Connector_JST:JST_XH_B2B-XH-AM_1x02_P2.50mm_Vertical" H 16950 4750 50  0001 C CNN
+F 3 "" H 16950 4750 50  0001 C CNN
+	1    18100 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L ariadne-rescue:Noctua-NF-A4x10-Simple-Fan-ariadne U43
+U 1 1 5FE15625
+P 18100 3550
+F 0 "U43" H 18528 3629 50  0000 L CNN
+F 1 "Noctua-NF-A4x10-Simple-Fan-ariadne" H 18528 3538 50  0000 L CNN
+F 2 "Connector_JST:JST_XH_B2B-XH-AM_1x02_P2.50mm_Vertical" H 16950 3900 50  0001 C CNN
+F 3 "" H 16950 3900 50  0001 C CNN
+	1    18100 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L ariadne-rescue:Noctua-NF-A4x10-Simple-Fan-ariadne U34
+U 1 1 5FCBF3F6
+P 18100 5250
+F 0 "U34" H 18528 5329 50  0000 L CNN
+F 1 "Noctua-NF-A4x10-Simple-Fan-ariadne" H 18528 5238 50  0000 L CNN
+F 2 "Connector_JST:JST_XH_B2B-XH-AM_1x02_P2.50mm_Vertical" H 16950 5600 50  0001 C CNN
+F 3 "" H 16950 5600 50  0001 C CNN
+	1    18100 5250
+	1    0    0    -1  
+$EndComp
+$Comp
+L ariadne-rescue:12v-Connector U13
+U 1 1 5FE3BAD0
+P 16450 6700
+F 0 "U13" H 16728 6904 50  0000 L CNN
+F 1 "12v-Connector" H 16728 6813 50  0000 L CNN
+F 2 "Connector_JST:JST_XH_B2B-XH-AM_1x02_P2.50mm_Vertical" H 16450 6700 50  0001 C CNN
+F 3 "" H 16450 6700 50  0001 C CNN
+	1    16450 6700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+12V #PWR?
+U 1 1 5FE42CC4
+P 16250 6300
+AR Path="/5FBCFD95/5FE42CC4" Ref="#PWR?"  Part="1" 
+AR Path="/5FE42CC4" Ref="#PWR020"  Part="1" 
+F 0 "#PWR020" H 16250 6150 50  0001 C CNN
+F 1 "+12V" H 16265 6473 50  0000 C CNN
+F 2 "" H 16250 6300 50  0001 C CNN
+F 3 "" H 16250 6300 50  0001 C CNN
+	1    16250 6300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5FE44A5A
+P 16550 6300
+AR Path="/5FBCFD95/5FE44A5A" Ref="#PWR?"  Part="1" 
+AR Path="/5FE44A5A" Ref="#PWR022"  Part="1" 
+F 0 "#PWR022" H 16550 6050 50  0001 C CNN
+F 1 "GND" H 16555 6127 50  0000 C CNN
+F 2 "" H 16550 6300 50  0001 C CNN
+F 3 "" H 16550 6300 50  0001 C CNN
+	1    16550 6300
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG07
+U 1 1 5FE46757
+P 18050 6100
+F 0 "#FLG07" H 18050 6175 50  0001 C CNN
+F 1 "PWR_FLAG" H 18050 6273 50  0000 C CNN
+F 2 "" H 18050 6100 50  0001 C CNN
+F 3 "~" H 18050 6100 50  0001 C CNN
+	1    18050 6100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L ariadne-rescue:12v-Connector_copy U47
+U 1 1 5FE470D2
+P 18250 6500
+F 0 "U47" H 18528 6704 50  0000 L CNN
+F 1 "12v-Connector_copy" H 18528 6613 50  0000 L CNN
+F 2 "Connector_JST:JST_XH_B2B-XH-AM_1x02_P2.50mm_Vertical" H 18250 6500 50  0001 C CNN
+F 3 "" H 18250 6500 50  0001 C CNN
+	1    18250 6500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG09
+U 1 1 5FE47330
+P 18350 6100
+F 0 "#FLG09" H 18350 6175 50  0001 C CNN
+F 1 "PWR_FLAG" H 18350 6273 50  0000 C CNN
+F 2 "" H 18350 6100 50  0001 C CNN
+F 3 "~" H 18350 6100 50  0001 C CNN
+	1    18350 6100
+	0    1    1    0   
+$EndComp
+$Comp
+L ariadne-rescue:12v-Connector U15
+U 1 1 5FE4976E
+P 16450 7550
+F 0 "U15" H 16728 7754 50  0000 L CNN
+F 1 "12v-Connector" H 16728 7663 50  0000 L CNN
+F 2 "Connector_JST:JST_XH_B2B-XH-AM_1x02_P2.50mm_Vertical" H 16450 7550 50  0001 C CNN
+F 3 "" H 16450 7550 50  0001 C CNN
+	1    16450 7550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+12V #PWR?
+U 1 1 5FE49C34
+P 16250 7150
+AR Path="/5FBCFD95/5FE49C34" Ref="#PWR?"  Part="1" 
+AR Path="/5FE49C34" Ref="#PWR021"  Part="1" 
+F 0 "#PWR021" H 16250 7000 50  0001 C CNN
+F 1 "+12V" H 16265 7323 50  0000 C CNN
+F 2 "" H 16250 7150 50  0001 C CNN
+F 3 "" H 16250 7150 50  0001 C CNN
+	1    16250 7150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5FE4A733
+P 16550 7150
+AR Path="/5FBCFD95/5FE4A733" Ref="#PWR?"  Part="1" 
+AR Path="/5FE4A733" Ref="#PWR023"  Part="1" 
+F 0 "#PWR023" H 16550 6900 50  0001 C CNN
+F 1 "GND" H 16555 6977 50  0000 C CNN
+F 2 "" H 16550 7150 50  0001 C CNN
+F 3 "" H 16550 7150 50  0001 C CNN
+	1    16550 7150
+	-1   0    0    1   
+$EndComp
+$Comp
+L ariadne-rescue:12v-Connector_copy U45
+U 1 1 5FE57AB6
+P 18150 7550
+F 0 "U45" H 18428 7754 50  0000 L CNN
+F 1 "12v-Connector_copy" H 18428 7663 50  0000 L CNN
+F 2 "Connector_JST:JST_XH_B2B-XH-AM_1x02_P2.50mm_Vertical" H 18150 7550 50  0001 C CNN
+F 3 "" H 18150 7550 50  0001 C CNN
+	1    18150 7550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG06
+U 1 1 5FE58340
+P 17950 7150
+F 0 "#FLG06" H 17950 7225 50  0001 C CNN
+F 1 "PWR_FLAG" H 17950 7323 50  0000 C CNN
+F 2 "" H 17950 7150 50  0001 C CNN
+F 3 "~" H 17950 7150 50  0001 C CNN
+	1    17950 7150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG08
+U 1 1 5FE58B20
+P 18250 7150
+F 0 "#FLG08" H 18250 7225 50  0001 C CNN
+F 1 "PWR_FLAG" H 18250 7323 50  0000 C CNN
+F 2 "" H 18250 7150 50  0001 C CNN
+F 3 "~" H 18250 7150 50  0001 C CNN
+	1    18250 7150
+	0    1    1    0   
+$EndComp
+Text GLabel 18050 6100 1    50   Output ~ 0
+FAN1+
+Text GLabel 18350 6100 1    50   Output ~ 0
+FAN1-
+Text GLabel 17950 7150 1    50   Output ~ 0
+FAN2+
+Text GLabel 18250 7150 1    50   Output ~ 0
+FAN2-
+Text GLabel 17800 4100 1    50   Input ~ 0
+FAN1-
+Text GLabel 17800 3250 1    50   Input ~ 0
+FAN1-
+Text GLabel 18000 4100 1    50   Input ~ 0
+FAN1+
+Text GLabel 18000 3250 1    50   Input ~ 0
+FAN1+
+Text GLabel 15550 3300 1    50   Input ~ 0
+FAN2+
+Text GLabel 15550 4850 1    50   Input ~ 0
+FAN2+
+Text GLabel 15350 4850 1    50   Input ~ 0
+FAN2-
+Text GLabel 15350 3300 1    50   Input ~ 0
+FAN2-
+$Comp
+L power:GND #PWR?
+U 1 1 5FE98C15
+P 17800 4950
+AR Path="/5FBCFD95/5FE98C15" Ref="#PWR?"  Part="1" 
+AR Path="/5FE98C15" Ref="#PWR026"  Part="1" 
+F 0 "#PWR026" H 17800 4700 50  0001 C CNN
+F 1 "GND" H 17805 4777 50  0000 C CNN
+F 2 "" H 17800 4950 50  0001 C CNN
+F 3 "" H 17800 4950 50  0001 C CNN
+	1    17800 4950
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+12V #PWR?
+U 1 1 5FE98F86
+P 18000 4950
+AR Path="/5FBCFD95/5FE98F86" Ref="#PWR?"  Part="1" 
+AR Path="/5FE98F86" Ref="#PWR027"  Part="1" 
+F 0 "#PWR027" H 18000 4800 50  0001 C CNN
+F 1 "+12V" H 18015 5123 50  0000 C CNN
+F 2 "" H 18000 4950 50  0001 C CNN
+F 3 "" H 18000 4950 50  0001 C CNN
+	1    18000 4950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5FE9A02C
+P 15350 4100
+AR Path="/5FBCFD95/5FE9A02C" Ref="#PWR?"  Part="1" 
+AR Path="/5FE9A02C" Ref="#PWR024"  Part="1" 
+F 0 "#PWR024" H 15350 3850 50  0001 C CNN
+F 1 "GND" H 15355 3927 50  0000 C CNN
+F 2 "" H 15350 4100 50  0001 C CNN
+F 3 "" H 15350 4100 50  0001 C CNN
+	1    15350 4100
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+12V #PWR?
+U 1 1 5FE9A4F4
+P 15550 4100
+AR Path="/5FBCFD95/5FE9A4F4" Ref="#PWR?"  Part="1" 
+AR Path="/5FE9A4F4" Ref="#PWR025"  Part="1" 
+F 0 "#PWR025" H 15550 3950 50  0001 C CNN
+F 1 "+12V" H 15565 4273 50  0000 C CNN
+F 2 "" H 15550 4100 50  0001 C CNN
+F 3 "" H 15550 4100 50  0001 C CNN
+	1    15550 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L ariadne-rescue:Noctua-NF-A4x10-Fan-mech-ariadne U29
+U 1 1 5FD41056
+P 20350 2350
+F 0 "U29" H 20778 2313 50  0000 L CNN
+F 1 "Noctua-NF-A4x10-Fan-mech-ariadne" H 20778 2222 50  0000 L CNN
+F 2 "ariadne:Noctua-NF-A4x10" H 19200 2700 50  0001 C CNN
+F 3 "" H 19200 2700 50  0001 C CNN
+	1    20350 2350
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
