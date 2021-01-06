@@ -6,7 +6,8 @@
 #include <Arduino.h>
 
 const int smallDim = 33;
-const int bigBigDim = 18;
+const int dim4 = 27;
+const int dim5 = 26;
 const int bigDim = 32;
 const int nilsPwm = 35;
 const int fanPwm = 34;
@@ -28,10 +29,12 @@ const int fanChannel = 4;
 void setup() {
   // put your setup code here, to run once:
   Serial.begin(115200);
+  pinMode(dim4, OUTPUT);
+  pinMode(dim5, OUTPUT);
   ledcSetup(ledChannel, freq, resolution);
   ledcSetup(fanChannel, freq, resolution);
   //ledcAttachPin(fanPwm, ledChannel);
-  ledcAttachPin(bigBigDim, ledChannel);
+  ledcAttachPin(dim5, ledChannel);
   }
 
 void loop() {
